@@ -9,6 +9,74 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <style type="text/css">
+
+	/*
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+		tr { border: 1px solid #ccc; }
+
+		td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+	}
+	/*
+		Label the data
+	*/
+	td:nth-of-type(1):before { content: "Instruction 1"; }
+	td:nth-of-type(2):before { content: "Instruction 2"; }
+
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body {
+			padding: 0;
+			margin: 0;
+			width: 320px; }
+		}
+
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body {
+			width: 495px;
+		}
+	}
+
+	</style>
 </head>
 <body>
 <h1 id="quick-overview">Quick Overview:</h1>
@@ -45,7 +113,26 @@
 <p>You should be all set at this point to go ahead and submit jobs to your queue</p>
     
     <p>---- PROPOSED REVISION CONTENT ---</p>
-    
+<table>
+	<thead>
+	<tr>
+		<th> Sample Instruction 1</th>
+		<th> Sample Instruction 2</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks . Please note, however, that printing in manner is limited to PDF files only.</p>
+<p>In your browser, go to https://print.simons-rock.edu:9192/app and login with your student credentials. Click the &quot;Web Print&quot; icon on the left-hand side. This will take you to the interface allowing you to submit a print job. Click &quot;Submit a Job&quot; We have only the one Central printer, which should already be selected. Click &quot;Print Options and Account Selection&quot; Choose the number of copies and click &quot;Upload Document&quot; Click &quot;Choose File&quot; and locate the PDF file you wish to print Your print job has been submitted. Now go to a Print Release Station to release the print job</p>
+<p>Troubleshooting:</p>
+		</td>
+		<td>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks . Please note, however, that printing in manner is limited to PDF files only.</p>
+<p>In your browser, go to https://print.simons-rock.edu:9192/app and login with your student credentials. Click the &quot;Web Print&quot; icon on the left-hand side. This will take you to the interface allowing you to submit a print job. Click &quot;Submit a Job&quot; We have only the one Central printer, which should already be selected. Click &quot;Print Options and Account Selection&quot; Choose the number of copies and click &quot;Upload Document&quot; Click &quot;Choose File&quot; and locate the PDF file you wish to print Your print job has been submitted. Now go to a Print Release Station to release the print job</p>
+<p>Troubleshooting:</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
 <ul>
 <li>To set up the Central printer, open up a web browser and navigate to &quot;127.0.0.1:631&quot;. [This is your computer's CUPS (Common Unix Printing System) interface.]</li>li
     <center><IMG SRC="LinuxCUPS.png" ALT="CUPS" width="924" height="332"></center>
