@@ -63,38 +63,32 @@
 <p>Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan. Click the plus icon (&quot;+&quot;) to add a new printer. At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot; Enter &quot;print&quot; for &quot;Address:&quot; Enter &quot;Central&quot; for &quot;Queue&quot;, and &quot;Central&quot; for &quot;Name&quot; For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;. (On older Macs that don't have this option, use &quot;Generic PostScript Printer&quot; instead, but check the menu to be sure you don't have PCL.) Click &quot;Add&quot; to add this printer. The opens the &quot;Setting up 'Central'...&quot; panel Put a check-mark in the box &quot;Duplex Printing Unit&quot;, then &quot;OK&quot;. Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
 
 <h3 id="linux-printer-install">Linux Printer Install</h3>
-
-<p>---- ORIGINAL CONTENT ---</p>
-
-<p>Assuming you use CUPS, login to the administrative interface at https://127.0.0.1:631/admin/ and add a network printer.</p>
-
-<p>You will need to specify: lpd://print/central as the address of the print queue.</p>
-
-<p>Choose the HP 4200 pcl driver when prompted</p>
-
-<p>Set up this printer to do double-sided printing as the default</p>
-
-<p>You should be all set at this point to go ahead and submit jobs to your queue</p>
     
-<p>---- PROPOSED REVISION CONTENT ---</p>
-    
-<ul>
-<li>To set up the Central printer, open up a web browser and navigate to &quot;127.0.0.1:631&quot;. This should bring you to the CUPS (Common Unix Printing System) interface. Click &quot;Add Printer&quot;</li>
-    <center><IMG SRC="../images/LinuxCUPS.png" ALT="CUPS" width="924" height="332"></center>
-        <li>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network:</li>
-    <center><IMG SRC="../images/2_add-printer_selection.png" ALT="Add Printer" width="498" height="230"></center>
-    <li>Select the Network LPD option and click continue <! I do not see this option in the list above; please clarify. -AKD>. For the address, paste in &quot;lpd://print/central&quot;.</li>
-    <center><IMG SRC="../images/3_add-printer_connection.png" ALT="Network LPD Option" width="372" height="197"></center>
-<li>On the next page, you can set up the nomenclature to whatever you please.</li>
-    <center><IMG SRC="../images/4_add-printer_name.png" ALT="Naming" width="352" height="162"></center>
+<p>To set up the Central printer for many common Linux distros, open up a web browser and navigate to &quot;127.0.0.1:631&quot;. This should bring you to the CUPS (Common Unix Printing System) interface. Click &quot;Add Printer&quot;</p>
+
+<center><IMG SRC="../images/LinuxCUPS.png" ALT="CUPS" width="924" height="332"></center>
+
+<p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network &quot;LPD/LPD Host or Printer&quot; option and click continue.</p>
+
+<center><IMG SRC="../images/2_add-printer_selection.png" ALT="Add Printer" width="498" height="230"></center>
+
+<p>In the next dialog box that appears, enter `lpd://print/central`.</p>
+
+<center><IMG SRC="../images/3_add-printer_connection.png" ALT="Network LPD Option" width="372" height="197"></center>
+
+<p>The next step is to name your printer.  You may use whatevere nomenclature you please.</p>
+
+<center><IMG SRC="../images/4_add-printer_name.png" ALT="Naming" width="352" height="162"></center>
+
 <li>Now, click the button to upload a PPD file, and choose this PPD file. Click continue</li>
-    <center><IMG SRC="../images/5_add-printer_type.png" ALT="PDD File Option" width="386" height="246"></center>
+
+<center><IMG SRC="../images/5_add-printer_type.png" ALT="PDD File Option" width="386" height="246"></center>
     
 </ul>
         
 <h2 id="web-print-printing-from-tablets-and-smart-phones">Web Print: Printing from Tablets and Smart Phones</h2>
 
-<p>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks . Please note, however, that printing in manner is limited to PDF files only.</p>
+<p>Web Print is an online interface for printing from tablets, smartphones, and Chromebooks . Please note, however, that printing in manner is limited to PDF files only.</p>
 
 <p>In your browser, go to https://print.simons-rock.edu:9192/app and login with your student credentials. Click the &quot;Web Print&quot; icon on the left-hand side. This will take you to the interface allowing you to submit a print job. Click &quot;Submit a Job&quot; We have only the one Central printer, which should already be selected. Click &quot;Print Options and Account Selection&quot; Choose the number of copies and click &quot;Upload Document&quot; Click &quot;Choose File&quot; and locate the PDF file you wish to print Your print job has been submitted. Now go to a Print Release Station to release the print job</p>
 
