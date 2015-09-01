@@ -12,8 +12,6 @@
 
   <!-- dropping in bootstrap CSS for responsive table functionality -->
 
-<style type="text/css">
-
 table {
   background-color: transparent;
 }
@@ -255,7 +253,6 @@ table th[class*="col-"] {
   }
 }
 
-</style>
   <!-- end bootstrap reference -->
 
   <!-- new CSS added by jfoos -->
