@@ -256,7 +256,6 @@ table th[class*="col-"] {
 }
 </style><!--
   end bootstrap reference -->
-  -->
 
   <!-- new CSS added by jfoos -->
 
@@ -325,7 +324,7 @@ table th[class*="col-"] {
 
 -->
 <style type="text/css">
-    @media only screen and (max-width: 480px){
+    @media only screen and (max-width: 1000px){
         #templateColumns{
             width:100% !important;
         }
@@ -337,7 +336,7 @@ table th[class*="col-"] {
 
         .columnImage{
             height:auto !important;
-            max-width:480px !important;
+            max-width:500px !important;
             width:100% !important;
         }
 
@@ -491,17 +490,15 @@ table th[class*="col-"] {
 
 <table border="0" cellpadding="0" cellspacing="0" width="900" id="templateColumns">
     <tr>
-        <td align="center" valign="top" width="50%" class="templateColumnContainer">
+        <td align="left" valign="top" width="50%" class="templateColumnContainer">
             <table border="0" cellpadding="10" cellspacing="0" width="100%">
                 <tr>
-                    <td class="leftColumnContent">
-                        <img src="http://placekitten.com/g/480/300" width="280" style="max-width:280px;" class="columnImage" />
-                    </td>
+                    <h1 align="left"> Step 1 </h1>
+					<p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network &quot;LPD/LPD Host or Printer&quot; option and click continue.</p>
                 </tr>
                 <tr>
                     <td valign="top" class="leftColumnContent">
-                        <h1>Left Column</h1>
-                        Lorem ipsum dolor sit amet.
+                        <img src="../images/linux/2_add-printer_selection.png" ALT="Add Printer" width="500" style="max-width:500px;" class="columnImage" />
                     </td>
                 </tr>
             </table>
@@ -510,13 +507,28 @@ table th[class*="col-"] {
             <table border="0" cellpadding="10" cellspacing="0" width="100%">
                 <tr>
                     <td class="rightColumnContent">
-                        <img src="http://placekitten.com/g/480/300" width="280" style="max-width:280px;" class="columnImage" />
+                        <h1 align="left"> Step 2 </h1>
+						<p> The next step is to name your printer.  You may use whatevere nomenclature you please. </p>
                     </td>
                 </tr>
                 <tr>
                     <td valign="top" class="rightColumnContent">
-                        <h1>Right Column</h1>
-                        Lorem ipsum dolor sit amet.
+                        <img src="../images/linux/3_add-printer_connection.png" ALT="Add Printer" width="500" style="max-width:500px;" class="columnImage" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+		<td align="center" valign="top" width="50%" class="templateColumnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td class="rightColumnContent">
+                        <h1 align="left"> Step 3 </h1>
+						<p> In the next dialog box that appears, enter `lpd://print/central`. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="rightColumnContent">
+                        <img src="../images/linux/4_add-printer_name.png" ALT="Add Printer" width="500" style="max-width:500px;" class="columnImage" />
                     </td>
                 </tr>
             </table>
