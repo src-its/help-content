@@ -12,6 +12,8 @@
 
   <!-- dropping in bootstrap CSS for responsive table functionality -->
 
+<!--
+<style type="text/css">
 table {
   background-color: transparent;
 }
@@ -252,15 +254,14 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
-
-  <!-- end bootstrap reference -->
+</style><!--
+  end bootstrap reference -->
+  -->
 
   <!-- new CSS added by jfoos -->
 
 <!-- temp disable
-
   <style type="text/css">
-
 	/*
 	Max width before this PARTICULAR table gets nasty
 	This query will take effect for any screen smaller than 760px
@@ -269,21 +270,17 @@ table th[class*="col-"] {
 	@media
 	only screen and (max-width: 760px),
 	(min-device-width: 768px) and (max-device-width: 1024px)  {
-
 		/* Force table to not be like tables anymore */
 		table, thead, tbody, th, td, tr {
 			display: block;
 		}
-
 		/* Hide table headers (but not display: none;, for accessibility) */
 		thead tr {
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
 		}
-
 		tr { border: 1px solid #ccc; }
-
 		td {
 			/* Behave  like a "row" */
 			border: none;
@@ -291,7 +288,6 @@ table th[class*="col-"] {
 			position: relative;
 			padding-left: 50%;
 		}
-
 		td:before {
 			/* Now like a table header */
 			position: absolute;
@@ -310,7 +306,6 @@ table th[class*="col-"] {
 	td:nth-of-type(2):before { content: "Step 2. "; }
 	td:nth-of-type(3):before { content: "Step 3. "; }
 	td:nth-of-type(4):before { content: "Step 4. "; }
-
 	/* Smartphones (portrait and landscape) ----------- */
 	@media only screen
 	and (min-device-width : 320px)
@@ -320,16 +315,43 @@ table th[class*="col-"] {
 			margin: 0;
 			width: 320px; }
 		}
-
 	/* iPads (portrait and landscape) ----------- */
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 		body {
 			width: 495px;
 		}
 	}
--->
 	</style>
 
+-->
+<style type="text/css">
+    @media only screen and (max-width: 480px){
+        #templateColumns{
+            width:100% !important;
+        }
+
+        .templateColumnContainer{
+            display:block !important;
+            width:100% !important;
+        }
+
+        .columnImage{
+            height:auto !important;
+            max-width:480px !important;
+            width:100% !important;
+        }
+
+        .leftColumnContent{
+            font-size:16px !important;
+            line-height:125% !important;
+        }
+
+        .rightColumnContent{
+            font-size:16px !important;
+            line-height:125% !important;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -371,6 +393,7 @@ table th[class*="col-"] {
 <h3 id="windows-printer-install">Windows Printer Install</h3>
 
 <h4 id="windows-7-8-and-10">Windows 7, 8, and 10</h4>
+
 <p>Open the Start Menu (or screen) and select or search &quot;File Explorer” to open a file browser window. In the address bar at the top of the window, type &quot;\print&quot; and press &quot;Enter&quot;; your computer should open up a dialog that will show the computer connecting to the central printer.</p>
 
 <!-- SCREENSHOTS NEEDED -->
@@ -415,7 +438,7 @@ table th[class*="col-"] {
         <tbody>
             <tr class="col-s-3">
                 <td width="30%">A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network &quot;LPD/LPD Host or Printer&quot; option and click continue.</td>
-                <td><center><IMG SRC="../images/linux/2_add-printer_selection.png" ALT="Add Printer"></center></td>
+                <td><center><IMG SRC="../images/linux/2_add-printer_selection.png" ALT="Add Printer"  style="max-width:100%;height:auto;"></center></td>
             </tr>
             <tr class="col-s-3">
                 <td width="30%">The next step is to name your printer.  You may use whatevere nomenclature you please.</th>
@@ -463,6 +486,45 @@ table th[class*="col-"] {
 </table>
 
 <!-- end experiment -->
+
+<!-- new jfoos experiment -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="900" id="templateColumns">
+    <tr>
+        <td align="center" valign="top" width="50%" class="templateColumnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td class="leftColumnContent">
+                        <img src="http://placekitten.com/g/480/300" width="280" style="max-width:280px;" class="columnImage" />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="leftColumnContent">
+                        <h1>Left Column</h1>
+                        Lorem ipsum dolor sit amet.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="center" valign="top" width="50%" class="templateColumnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td class="rightColumnContent">
+                        <img src="http://placekitten.com/g/480/300" width="280" style="max-width:280px;" class="columnImage" />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="rightColumnContent">
+                        <h1>Right Column</h1>
+                        Lorem ipsum dolor sit amet.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- end experiment-->
 
 <p>Web Print is an online interface for printing from tablets, smartphones, and Chromebooks . Please note, however, that printing in manner is limited to PDF files only.</p>
 
