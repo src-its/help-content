@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="two-thirds column" style="margin-top: 4%">
+        <h2>Quick Overview:</h2>
+        <p>We use the PaperCut managed system printing for students on campus. This allows quick and easy printing from any of the many release stations. The general process for connecting to PaperCut printing system on any computer is as follows:
+          Install and run the PaperCut Client software (see download links below), and enter your Simon’s Rock login credentials. Connect to the central printer (also called the queue); it’s conveniently named “Central” and it resides on the server “print” Make the central printer your default.
+          Details are provided below for Windows, Mac, and Linux setups.
+        </p>
+        <h2 id="papercut-client-setup">PaperCut Client Setup:</h2>
+        <p>The PCClient software identifies your print jobs to the PaperCut system. To print to a campus printer, PCClient must be running so you can login to PaperCut when you submit a print job.</p>
+        <h3 id="pcclient-for-windows-mac">PCClient for Windows &amp; Mac</h3>
+        <p>Use the links below to download the PCClient installer for your system. (Note: you must be on-campus for these links to work)</p>
+        <p>Windows Mac OSX 10.7-10.10 Mac OSX PRE-10.7</p>
+        <h3 id="pcclient-for-linux">PCClient for Linux</h3>
+        <p>In order for the Linux PCClient to work, you must first have a recent Java version installed on your computer (at least version 5). For many Linux distros, you can check this from the command line with <code>java -version</code> to verify that Java is installed. If not, research the appropriate packages for your system. [If you're running a debian-based distro, for example, install with <code>sudo apt-get install java-common</code>.]</p>
+        <p>After you have confirmed that Java is installed, download the PCClient package. Extract it with the following command: <code>tar -xf pcclient-linux.tar.gz</code> After extracting the file, find and run the pc-client-linux.sh script to launch the PaperCut client. [Note: You’ll have to run this script each time you wish to use PaperCut; you may wish to configure your machine to auto-start it whenever you login to your X graphical desktop environment].</p>
+
+        <h3 id="auto-login">Automatic Login</h3>
+        <p>The Windows and Mac installers configure the PCClient software to run each time you log into your computer. After installation, PCClient will prompt you to login with your Simon's Rock user ID and password. (These are the same credentials you use for campus email and the &quot;Inside&quot; web pages. Note that your user ID is just the first part of your email address, not the <span class="citation" data-cites="simons-rock.edu">@simons-rock.edu</span>). If you are running it on your own computer, you may specify that it should save your credentials &quot;Always,&quot; so that you do not need to re-enter your data each time you print.</p>
+        <p><strong>At shared library and lab computers, PaperCut will only allow you to save your login credentials for a couple of minutes.</strong></p>
+
+        <h2 id="central-printer-installation">Central Printer Installation</h2>
+        <p>With PaperCut, you print to a central virtual printer which will allow you to output your print job from any Print Release station on campus.</p>
+
+        <h3 id="windows-printer-install">Windows Printer Install</h3>
+        <h4 id="windows-7-8-and-10">Windows 7, 8, and 10</h4>
+        <ol>
+          <li>Open the Start Menu (or screen) and select or search <code>File Explorer</code> to open a file browser window.</li>
+          <li>In the address bar at the top of the window, type <code>\print</code> and press enter.</li>
+          <li>Your computer should open up a dialog that will show the computer connecting to the central printer.</li>
+        </ol>
+
+        <!-- SCREENSHOTS NEEDED -->
+
+        <h4 id="windows-vista">Windows Vista</h4>
+        <ol>
+          <li>Download either this 32bit driver to your system or this 64bit driver.</li>
+          <li>Once downloaded, run the program and extract the contents to <code>C:LJ4200 PCL6 Driver</code> </li>
+          <li>Open the Start Menu and select <code>Control Panel</code>.</li>
+          <li>In the control panel, select <code>Printers</code>.
+            <ol>
+              <li>Near the top of the window, click &quot;Add a printer&quot;</li>
+              <li>Select &quot;Add a local printer&quot;.</li>
+              <li>Click &quot;Create a new port&quot; and choose &quot;Type of port: Local Port&quot;</li>
+              <li>Click Next, and enter &quot;\print&quot; Click Next, and then click &quot;Have Disk&quot;</li>
+            </ol>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      <!-- Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot; Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot; Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p> !-->
+        <h3 id="mac-printer-install">Mac Printer Install</h3>
+        <p>Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan. Click the plus icon (&quot;+&quot;) to add a new printer. At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot; Enter &quot;print&quot; for &quot;Address:&quot; Enter &quot;Central&quot; for &quot;Queue&quot;, and &quot;Central&quot; for &quot;Name&quot; For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;. (On older Macs that don't have this option, use &quot;Generic PostScript Printer&quot; instead, but check the menu to be sure you don't have PCL.) Click &quot;Add&quot; to add this printer. The opens the &quot;Setting up 'Central'...&quot; panel Put a check-mark in the box &quot;Duplex Printing Unit&quot;, then &quot;OK&quot;. Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
+
+        <h3 id="linux-printer-install">Linux Printer Install</h3>
+        <p>To set up the Central printer for many common Linux distros, open up your web browser and navigate to <code>127.0.0.1:631</code>. This should bring you to the CUPS (Common Unix Printing System) interface. Click &quot;Add Printer&quot;</p>
+        <div class="row">
+          <div class="one-half column" id="cups"></div>
+          <div class="one-half column" id ="">Eleven</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
