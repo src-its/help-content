@@ -26,16 +26,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <!-- This line has something to do with how text marked as code is rendered.  We can delete it if unnecessary 
+  <!-- This line has something to do with how text marked as code is rendered.  We can delete it if unnecessary.
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <!-- <style type="text/css">code{white-space: pre;}</style> 
+    <!-- <style type="text/css">code{white-space: pre;}</style> --> 
+
+  <!-- The following lines are some form of 'shim' that is specific to Internet Explorer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <!-- disabling bootstrap CSS in deference to addition of skeleton.css text about
+
+
+  <!-- disabling bootstrap CSS in deference to addition of skeleton.css text above
  
 <style type="text/css">
 
@@ -285,8 +290,6 @@ table th[class*="col-"] {
 
   <!-- new CSS added by jfoos -->
 
-
-
   <style type="text/css">
     @media only screen and (max-width: 480px){
         #templateColumns{
@@ -314,8 +317,9 @@ table th[class*="col-"] {
             line-height:125% !important;
         }
     }
-</style>
-	<!-- Justin's skeleton.css moved here so not to interfere with pre-existing site-wide css -->
+  </style>
+
+	<!-- Moving out Justin's skeleton.css so not to interfere with pre-existing site-wide css
 
 	<style type="text/css">
 	
@@ -742,7 +746,12 @@ there.
 
 /* Baclgrounds to divs */
 </style>
-<!-- and also normalize.css -->
+
+-->
+
+<!-- and also excluding normalize.css
+
+
 <style type="text/css">
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
@@ -1177,7 +1186,11 @@ th {
 #cups {
   background-image: url('../images/linux/LinuxCUPS.png');
 }
+
 </style>
+
+ -->
+
 
 </head>
 
@@ -1227,11 +1240,35 @@ th {
 
 <h4 id="windows-vista">Windows Vista</h4>
 
-<p>First download either this 32bit driver to your system or this 64bit driver. Once downloaded, run the program and extract the contents to &quot;C:LJ4200 PCL6 Driver&quot;. Open the Start Menu and select &quot;Control Panel&quot;. In the control panel, select &quot;Printers&quot;. Near the top of the window, click &quot;Add a printer&quot;. Select &quot;Add a local printer&quot; Click &quot;Create a new port&quot; and choose &quot;Type of port: Local Port&quot; Click Next, and enter &quot;\print&quot; Click Next, and then click &quot;Have Disk&quot; Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot; Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot; Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p>
+<p>First download either this 32bit driver to your system or this 64bit driver. Once downloaded, run the program and extract the contents to &quot;C:LJ4200 PCL6 Driver&quot;.
+
+Open the Start Menu and select &quot;Control Panel&quot;.
+
+In the control panel, select &quot;Printers&quot;.
+
+Near the top of the window, click &quot;Add a printer&quot;.
+Select &quot;Add a local printer&quot;
+Click &quot;Create a new port&quot; and choose &quot;Type of port: Local Port&quot;
+
+Click Next, and enter &quot;\print&quot; Click Next, and then click &quot;Have Disk&quot;
+
+Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot;
+
+Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot;
+
+Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p>
 
 <h3 id="mac-printer-install">Mac Printer Install</h3>
 
-<p>Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan. Click the plus icon (&quot;+&quot;) to add a new printer. At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot; Enter &quot;print&quot; for &quot;Address:&quot; Enter &quot;Central&quot; for &quot;Queue&quot;, and &quot;Central&quot; for &quot;Name&quot; For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;. (On older Macs that don't have this option, use &quot;Generic PostScript Printer&quot; instead, but check the menu to be sure you don't have PCL.) Click &quot;Add&quot; to add this printer. The opens the &quot;Setting up 'Central'...&quot; panel Put a check-mark in the box &quot;Duplex Printing Unit&quot;, then &quot;OK&quot;. Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
+<p>Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan.
+
+Click the plus icon (&quot;+&quot;) to add a new printer.
+
+At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot; Enter &quot;print&quot; for &quot;Address:&quot; Enter &quot;Central&quot; for &quot;Queue&quot;, and &quot;Central&quot; for &quot;Name&quot; For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;. (On older Macs that don't have this option, use &quot;Generic PostScript Printer&quot; instead, but check the menu to be sure you don't have PCL.)
+
+Click &quot;Add&quot; to add this printer. This opens the &quot;Setting up 'Central'...&quot; panel Put a check-mark in the box &quot;Duplex Printing Unit&quot;, then &quot;OK&quot;.
+
+Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
 
 <h3 id="linux-printer-install">Linux Printer Install</h3>
     
