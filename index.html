@@ -54,18 +54,14 @@
         <p>With PaperCut, you print to a central virtual printer which will allow you to output your print job from any Print Release station on campus.</p>
 
         <h3 id="windows-printer-install">Windows Printer Install</h3>
-        <div class="row">
-          <div class="one-half column">
             <h4 id="windows-7-8-and-10">Windows 7, 8, and 10</h4>
             <ol>
               <li>Open the Start Menu (or screen) and select or search <code>File Explorer</code> to open a file browser window.</li>
               <li>In the address bar at the top of the window, type <code>\print</code> and press enter.</li>
             <li>Your computer should open up a dialog that will show the computer connecting to the central printer.</li>
             </ol>
-          </div>
 
         <!-- SCREENSHOTS NEEDED -->
-        <div class="one-half column">
           <h4 id="windows-vista">Windows Vista</h4>
           <ol>
             <li>Download either this 32bit driver to your system or this 64bit driver.</li>
@@ -84,9 +80,7 @@
             <li>Click Next</li>
             <li>Set the printer as your default and click Next</li>
           </ol>
-      </div>
-      </div>
-      <!-- Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot; Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot; Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p> !-->
+            <!-- Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot; Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot; Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p> !-->
         <h3 id="mac-printer-install">Mac Printer Install</h3>
         <ol>
           <li>
@@ -113,14 +107,25 @@
         </ol>
         <h3 id="linux-printer-install">Linux Printer Install</h3>
         <p>To set up the Central printer for many common Linux distros, open up your web browser and navigate to <code>127.0.0.1:631</code>. This should bring you to the CUPS (Common Unix Printing System) interface. Click &quot;Add Printer&quot;</p>
-        <div class="row">
-          <div class="one-half column category">
             <img class='u-max-full-width' src='images/linux/LinuxCUPS.png' />
-            <p>Click &quot;Add Printer&quot;</p>
-          </div>
-          <div class="one-half column" id ="">
-            <img class='u-max-full-width' src='images/linux/2_add-printer_selection.png' />
+        <div class="row">
+          <div class="six columns" id ="">
             <p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network "LPD/LPD Host or Printer" option and click continue.</p>
+            <img class='u-max-full-width' src='images/linux/2_add-printer_selection.png' />
+          </div>
+          <div class="six columns">
+            <p>In the next dialog box that appears, enter `lpd://print/central`.</p>
+            <img class='u-max-full-width' src='images/linux/3_add-printer_connection.png' />
+          </div>
+        </div>
+        <div class="row">
+          <div class="six columns" id ="">
+            <p>The next step is to name your printer. You may use whatevere nomenclature you please.</p>
+            <img class='u-max-full-width' src='images/linux/4_add-printer_name.png' />
+          </div>
+          <div class="six columns">
+            <p>Now, click the button to upload a PPD file, and choose this PPD file. Click continue</p>
+            <img class='u-max-full-width' src='images/linux/5_add-printer_type.png' />
           </div>
         </div>
         <h2 id="web-print-printing-from-tablets-and-smart-phones">Web Print: Printing from Tablets and Smart Phones</h2>
