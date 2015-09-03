@@ -425,3 +425,9 @@ td,
 th {
   padding: 0;
 }
+
+/* images */
+
+#cups {
+  background-image: url('../images/linux/LinuxCUPS.png');
+}
