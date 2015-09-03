@@ -5,7 +5,6 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -55,44 +54,87 @@
         <p>With PaperCut, you print to a central virtual printer which will allow you to output your print job from any Print Release station on campus.</p>
 
         <h3 id="windows-printer-install">Windows Printer Install</h3>
-        <h4 id="windows-7-8-and-10">Windows 7, 8, and 10</h4>
-        <ol>
-          <li>Open the Start Menu (or screen) and select or search <code>File Explorer</code> to open a file browser window.</li>
-          <li>In the address bar at the top of the window, type <code>\print</code> and press enter.</li>
-          <li>Your computer should open up a dialog that will show the computer connecting to the central printer.</li>
-        </ol>
+        <div class="row">
+          <div class="one-half column">
+            <h4 id="windows-7-8-and-10">Windows 7, 8, and 10</h4>
+            <ol>
+              <li>Open the Start Menu (or screen) and select or search <code>File Explorer</code> to open a file browser window.</li>
+              <li>In the address bar at the top of the window, type <code>\print</code> and press enter.</li>
+            <li>Your computer should open up a dialog that will show the computer connecting to the central printer.</li>
+            </ol>
+          </div>
 
         <!-- SCREENSHOTS NEEDED -->
-
-        <h4 id="windows-vista">Windows Vista</h4>
-        <ol>
-          <li>Download either this 32bit driver to your system or this 64bit driver.</li>
-          <li>Once downloaded, run the program and extract the contents to <code>C:LJ4200 PCL6 Driver</code> </li>
-          <li>Open the Start Menu and select <code>Control Panel</code>.</li>
-          <li>In the control panel, select <code>Printers</code>.
+        <div class="one-half column">
+          <h4 id="windows-vista">Windows Vista</h4>
+          <ol>
+            <li>Download either this 32bit driver to your system or this 64bit driver.</li>
+            <li>Once downloaded, run the program and extract the contents to <code>C:LJ4200 PCL6 Driver</code> </li>
+            <li>Open the Start Menu and select <code>Control Panel</code>.</li>
+            <li>In the control panel, select <code>Printers</code>.
             <ol>
               <li>Near the top of the window, click &quot;Add a printer&quot;</li>
               <li>Select &quot;Add a local printer&quot;.</li>
               <li>Click &quot;Create a new port&quot; and choose &quot;Type of port: Local Port&quot;</li>
               <li>Click Next, and enter &quot;\print&quot; Click Next, and then click &quot;Have Disk&quot;</li>
+              <li>Click Browse and navigate to <code>C:LJ4200 PCL6 Driver</code> Select <code>hpc4200c</code> and click open, and then press ok.</li>
+              <li>Select <code>HP Laserjet 4200 PCL 6</code></li>
             </ol>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+            </li>
+            <li>Click Next</li>
+            <li>Set the printer as your default and click Next</li>
+          </ol>
+      </div>
+      </div>
       <!-- Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot; Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot; Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p> !-->
         <h3 id="mac-printer-install">Mac Printer Install</h3>
-        <p>Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan. Click the plus icon (&quot;+&quot;) to add a new printer. At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot; Enter &quot;print&quot; for &quot;Address:&quot; Enter &quot;Central&quot; for &quot;Queue&quot;, and &quot;Central&quot; for &quot;Name&quot; For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;. (On older Macs that don't have this option, use &quot;Generic PostScript Printer&quot; instead, but check the menu to be sure you don't have PCL.) Click &quot;Add&quot; to add this printer. The opens the &quot;Setting up 'Central'...&quot; panel Put a check-mark in the box &quot;Duplex Printing Unit&quot;, then &quot;OK&quot;. Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
-
+        <ol>
+          <li>
+            Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan.
+            <ol>
+              <li>
+                Click the plus icon (+) to add a new printer.
+              </li>
+            </ol>
+          </li>
+          <li>
+            At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot;
+          </li>
+          <li>
+            Enter &quot;print&quot; for &quot;Address:&quot;
+          </li>
+            Enter &quot;Central&quot; for &quot;Queue&quot;
+          <li>
+            You may name the printer whatever you'd like.
+          </li>
+          <li>
+            For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;.
+          </li>
+        </ol>
         <h3 id="linux-printer-install">Linux Printer Install</h3>
         <p>To set up the Central printer for many common Linux distros, open up your web browser and navigate to <code>127.0.0.1:631</code>. This should bring you to the CUPS (Common Unix Printing System) interface. Click &quot;Add Printer&quot;</p>
         <div class="row">
-          <div class="one-half column category" id="cups">
+          <div class="one-half column category">
             <img class='u-max-full-width' src='images/linux/LinuxCUPS.png' />
+            <p>Click &quot;Add Printer&quot;</p>
           </div>
           <div class="one-half column" id ="">
             <img class='u-max-full-width' src='images/linux/2_add-printer_selection.png' />
+            <p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network "LPD/LPD Host or Printer" option and click continue.</p>
+          </div>
+        </div>
+        <h2 id="web-print-printing-from-tablets-and-smart-phones">Web Print: Printing from Tablets and Smart Phones</h2>
+        <div class="row">
+          <div class="one-half column category">
+            <h5>Sample instruction 1</h5>
+            <p>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks.
+            Please note, however, that printing in manner is limited to PDF files only.
+            In your browser, go to https://print.simons-rock.edu:9192/app and login with your student credentials.
+            Click the "Web Print" icon on the left-hand side. This will take you to the interface allowing you to submit a print job.
+            Click "Submit a Job" We have only the one Central printer, which should already be selected.
+            Click "Print Options and Account Selection" Choose the number of copies and click "Upload Document".
+            Click "Choose File" and locate the PDF file you wish to print Your print job has been submitted. Now go to a Print Release Station to release the print job.
+            </p>
           </div>
         </div>
       </div>
