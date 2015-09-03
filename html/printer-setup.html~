@@ -1,42 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-  <!-- Basic Page Meta
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <meta name="description" content="Printing Configuration with PaperCut">
-  <meta name="author" content="ITS Simon's Rock">
-
-  <!-- Mobile Specific Metas <!-- We should learn more about the uses of this header section.
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT <!-- Do we know if this setting would change the src portal's font styling if plugged in?  Would it not be over-ridden by the CSS below?  In what cases would it be necessary to leave a default?
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon <!-- Let's find or make an SRC-ITS favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <!-- This line has something to do with how text marked as code is rendered.  We can delete it if unnecessary 
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <!-- <style type="text/css">code{white-space: pre;}</style> 
-
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <!-- disabling bootstrap CSS in deference to addition of skeleton.css text about
- 
+  <!-- dropping in bootstrap CSS for responsive table functionality -->
+
 <style type="text/css">
 
 table {
