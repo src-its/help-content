@@ -1,337 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+  <!-- Basic Page Meta
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <meta name="description" content="Printing Configuration with PaperCut">
+  <meta name="author" content="ITS Simon's Rock">
 
-  <!-- dropping in bootstrap CSS for responsive table functionality -->
+  <!-- Mobile Specific Metas <!-- We should learn more about the uses of this header section.
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style type="text/css">
+  <!-- FONT <!-- Do we know if this setting would change the src portal's font styling if plugged in?  Would it not be over-ridden by the CSS below?  In what cases would it be necessary to leave a default?
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-table {
-  background-color: transparent;
-}
-caption {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #777;
-  text-align: left;
-}
-th {
-  text-align: left;
-}
-.table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > td,
-.table > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.42857143;
-  vertical-align: top;
-  border-top: 1px solid #ddd;
-}
-.table > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
-}
-.table > caption + thead > tr:first-child > th,
-.table > colgroup + thead > tr:first-child > th,
-.table > thead:first-child > tr:first-child > th,
-.table > caption + thead > tr:first-child > td,
-.table > colgroup + thead > tr:first-child > td,
-.table > thead:first-child > tr:first-child > td {
-  border-top: 0;
-}
-.table > tbody + tbody {
-  border-top: 2px solid #ddd;
-}
-.table .table {
-  background-color: #fff;
-}
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > td {
-  padding: 5px;
-}
-.table-bordered {
-  border: 1px solid #ddd;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th,
-.table-bordered > tfoot > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
-}
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
-}
-.table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
-}
-table col[class*="col-"] {
-  position: static;
-  display: table-column;
-  float: none;
-}
-table td[class*="col-"],
-table th[class*="col-"] {
-  position: static;
-  display: table-cell;
-  float: none;
-}
-.table > thead > tr > td.active,
-.table > tbody > tr > td.active,
-.table > tfoot > tr > td.active,
-.table > thead > tr > th.active,
-.table > tbody > tr > th.active,
-.table > tfoot > tr > th.active,
-.table > thead > tr.active > td,
-.table > tbody > tr.active > td,
-.table > tfoot > tr.active > td,
-.table > thead > tr.active > th,
-.table > tbody > tr.active > th,
-.table > tfoot > tr.active > th {
-  background-color: #f5f5f5;
-}
-.table-hover > tbody > tr > td.active:hover,
-.table-hover > tbody > tr > th.active:hover,
-.table-hover > tbody > tr.active:hover > td,
-.table-hover > tbody > tr:hover > .active,
-.table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
-}
-.table > thead > tr > td.success,
-.table > tbody > tr > td.success,
-.table > tfoot > tr > td.success,
-.table > thead > tr > th.success,
-.table > tbody > tr > th.success,
-.table > tfoot > tr > th.success,
-.table > thead > tr.success > td,
-.table > tbody > tr.success > td,
-.table > tfoot > tr.success > td,
-.table > thead > tr.success > th,
-.table > tbody > tr.success > th,
-.table > tfoot > tr.success > th {
-  background-color: #dff0d8;
-}
-.table-hover > tbody > tr > td.success:hover,
-.table-hover > tbody > tr > th.success:hover,
-.table-hover > tbody > tr.success:hover > td,
-.table-hover > tbody > tr:hover > .success,
-.table-hover > tbody > tr.success:hover > th {
-  background-color: #d0e9c6;
-}
-.table > thead > tr > td.info,
-.table > tbody > tr > td.info,
-.table > tfoot > tr > td.info,
-.table > thead > tr > th.info,
-.table > tbody > tr > th.info,
-.table > tfoot > tr > th.info,
-.table > thead > tr.info > td,
-.table > tbody > tr.info > td,
-.table > tfoot > tr.info > td,
-.table > thead > tr.info > th,
-.table > tbody > tr.info > th,
-.table > tfoot > tr.info > th {
-  background-color: #d9edf7;
-}
-.table-hover > tbody > tr > td.info:hover,
-.table-hover > tbody > tr > th.info:hover,
-.table-hover > tbody > tr.info:hover > td,
-.table-hover > tbody > tr:hover > .info,
-.table-hover > tbody > tr.info:hover > th {
-  background-color: #c4e3f3;
-}
-.table > thead > tr > td.warning,
-.table > tbody > tr > td.warning,
-.table > tfoot > tr > td.warning,
-.table > thead > tr > th.warning,
-.table > tbody > tr > th.warning,
-.table > tfoot > tr > th.warning,
-.table > thead > tr.warning > td,
-.table > tbody > tr.warning > td,
-.table > tfoot > tr.warning > td,
-.table > thead > tr.warning > th,
-.table > tbody > tr.warning > th,
-.table > tfoot > tr.warning > th {
-  background-color: #fcf8e3;
-}
-.table-hover > tbody > tr > td.warning:hover,
-.table-hover > tbody > tr > th.warning:hover,
-.table-hover > tbody > tr.warning:hover > td,
-.table-hover > tbody > tr:hover > .warning,
-.table-hover > tbody > tr.warning:hover > th {
-  background-color: #faf2cc;
-}
-.table > thead > tr > td.danger,
-.table > tbody > tr > td.danger,
-.table > tfoot > tr > td.danger,
-.table > thead > tr > th.danger,
-.table > tbody > tr > th.danger,
-.table > tfoot > tr > th.danger,
-.table > thead > tr.danger > td,
-.table > tbody > tr.danger > td,
-.table > tfoot > tr.danger > td,
-.table > thead > tr.danger > th,
-.table > tbody > tr.danger > th,
-.table > tfoot > tr.danger > th {
-  background-color: #f2dede;
-}
-.table-hover > tbody > tr > td.danger:hover,
-.table-hover > tbody > tr > th.danger:hover,
-.table-hover > tbody > tr.danger:hover > td,
-.table-hover > tbody > tr:hover > .danger,
-.table-hover > tbody > tr.danger:hover > th {
-  background-color: #ebcccc;
-}
-.table-responsive {
-  min-height: .01%;
-  overflow-x: auto;
-}
-@media screen and (max-width: 767px) {
-  .table-responsive {
-    width: 100%;
-    margin-bottom: 15px;
-    overflow-y: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
-  }
-  .table-responsive > .table {
-    margin-bottom: 0;
-  }
-  .table-responsive > .table > thead > tr > th,
-  .table-responsive > .table > tbody > tr > th,
-  .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > thead > tr > td,
-  .table-responsive > .table > tbody > tr > td,
-  .table-responsive > .table > tfoot > tr > td {
-    white-space: nowrap;
-  }
-  .table-responsive > .table-bordered {
-    border: 0;
-  }
-  .table-responsive > .table-bordered > thead > tr > th:first-child,
-  .table-responsive > .table-bordered > tbody > tr > th:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .table-responsive > .table-bordered > thead > tr > td:first-child,
-  .table-responsive > .table-bordered > tbody > tr > td:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-    border-left: 0;
-  }
-  .table-responsive > .table-bordered > thead > tr > th:last-child,
-  .table-responsive > .table-bordered > tbody > tr > th:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .table-responsive > .table-bordered > thead > tr > td:last-child,
-  .table-responsive > .table-bordered > tbody > tr > td:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-    border-right: 0;
-  }
-  .table-responsive > .table-bordered > tbody > tr:last-child > th,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-  .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-    border-bottom: 0;
-  }
-}
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 
-</style>
-  <!-- end bootstrap reference -->
+  <!-- Favicon <!-- Let's find or make an SRC-ITS favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+    
+  <!-- Bootstrap stuff added by Connor; may be n00b -->
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <!-- new CSS added by jfoos -->
 
-<!-- temp disable
-
   <style type="text/css">
+    @media only screen and (max-width: 480px){
+        #templateColumns{
+            width:100% !important;
+        }
 
-	/*
-	Max width before this PARTICULAR table gets nasty
-	This query will take effect for any screen smaller than 760px
-	and also iPads specifically.
-	*/
-	@media
-	only screen and (max-width: 760px),
-	(min-device-width: 768px) and (max-device-width: 1024px)  {
+        .templateColumnContainer{
+            display:block !important;
+            width:100% !important;
+        }
 
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr {
-			display: block;
-		}
+        .columnImage{
+            height:auto !important;
+            max-width:600px !important;
+            width:100% !important;
+        }
 
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
+        .leftColumnContent{
+            font-size:16px !important;
+            line-height:125% !important;
+        }
 
-		tr { border: 1px solid #ccc; }
+        .rightColumnContent{
+            font-size:16px !important;
+            line-height:125% !important;
+        }
+    }
+  </style>
 
-		td {
-			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid #eee;
-			position: relative;
-			padding-left: 50%;
-		}
+ -->
 
-		td:before {
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 6px;
-			left: 6px;
-			width: 45%;
-			padding-right: 10px;
-			white-space: nowrap;
-		}
-	}
-	/*
-		Label the data
-	*/
-	td:nth-of-type(1):before { content: "Step 1. "; }
-	td:nth-of-type(2):before { content: "Step 2. "; }
-	td:nth-of-type(3):before { content: "Step 3. "; }
-	td:nth-of-type(4):before { content: "Step 4. "; }
-
-	/* Smartphones (portrait and landscape) ----------- */
-	@media only screen
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		body {
-			padding: 0;
-			margin: 0;
-			width: 320px; }
-		}
-
-	/* iPads (portrait and landscape) ----------- */
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-		body {
-			width: 495px;
-		}
-	}
--->
-	</style>
 
 </head>
 
@@ -381,37 +116,99 @@ table th[class*="col-"] {
 
 <h4 id="windows-vista">Windows Vista</h4>
 
-<p>First download either this 32bit driver to your system or this 64bit driver. Once downloaded, run the program and extract the contents to &quot;C:LJ4200 PCL6 Driver&quot;. Open the Start Menu and select &quot;Control Panel&quot;. In the control panel, select &quot;Printers&quot;. Near the top of the window, click &quot;Add a printer&quot;. Select &quot;Add a local printer&quot; Click &quot;Create a new port&quot; and choose &quot;Type of port: Local Port&quot; Click Next, and enter &quot;\print&quot; Click Next, and then click &quot;Have Disk&quot; Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot; Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot; Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p>
+<p>First download either this 32bit driver to your system or this 64bit driver. Once downloaded, run the program and extract the contents to &quot;C:LJ4200 PCL6 Driver&quot;.
+
+Open the Start Menu and select &quot;Control Panel&quot;.
+
+In the control panel, select &quot;Printers&quot;.
+
+Near the top of the window, click &quot;Add a printer&quot;.
+Select &quot;Add a local printer&quot;
+Click &quot;Create a new port&quot; and choose &quot;Type of port: Local Port&quot;
+
+Click Next, and enter &quot;\print&quot; Click Next, and then click &quot;Have Disk&quot;
+
+Click Browse and navigate to &quot;C:LJ4200 PCL6 Driver&quot;
+
+Select &quot;hpc4200c&quot; and click &quot;Open&quot; then &quot;OK&quot;
+
+Select &quot;HP Laserjet 4200 PCL 6&quot; and click Next Set the printer as your default and click Next</p>
 
 <h3 id="mac-printer-install">Mac Printer Install</h3>
 
-<p>Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan. Click the plus icon (&quot;+&quot;) to add a new printer. At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot; Enter &quot;print&quot; for &quot;Address:&quot; Enter &quot;Central&quot; for &quot;Queue&quot;, and &quot;Central&quot; for &quot;Name&quot; For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;. (On older Macs that don't have this option, use &quot;Generic PostScript Printer&quot; instead, but check the menu to be sure you don't have PCL.) Click &quot;Add&quot; to add this printer. The opens the &quot;Setting up 'Central'...&quot; panel Put a check-mark in the box &quot;Duplex Printing Unit&quot;, then &quot;OK&quot;. Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
+<p>Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan.
+
+Click the plus icon (&quot;+&quot;) to add a new printer.
+
+At the top of the &quot;Add&quot; printer window, choose &quot;IP&quot;, and select Protocol: &quot;Line Printer Daemon - LPD&quot; Enter &quot;print&quot; for &quot;Address:&quot; Enter &quot;Central&quot; for &quot;Queue&quot;, and &quot;Central&quot; for &quot;Name&quot; For the &quot;Use:&quot; driver menu, select &quot;Generic PCL Printer&quot;. (On older Macs that don't have this option, use &quot;Generic PostScript Printer&quot; instead, but check the menu to be sure you don't have PCL.)
+
+Click &quot;Add&quot; to add this printer. This opens the &quot;Setting up 'Central'...&quot; panel Put a check-mark in the box &quot;Duplex Printing Unit&quot;, then &quot;OK&quot;.
+
+Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
 
 <h3 id="linux-printer-install">Linux Printer Install</h3>
-    
+
+<div class="row">
+    <div class="col-md-6">
+        
 <p>To set up the Central printer for many common Linux distros, open up a web browser and navigate to &quot;127.0.0.1:631&quot;. This should bring you to the CUPS (Common Unix Printing System) interface. Click &quot;Add Printer&quot;</p>
-
-<center><IMG SRC="../images/linux/LinuxCUPS.png" ALT="CUPS" width="924" height="332"></center>
-
+    
+        <center>
+            <IMG SRC="../images/linux/LinuxCUPS.png" class="img-responsive" ALT="CUPS" width="924" height="332">
+        </center>
+    </div>
+        
+ <!----------------------------->   
+        
+    <div class="col-md-6">
+        
 <p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network &quot;LPD/LPD Host or Printer&quot; option and click continue.</p>
 
-<center><IMG SRC="../images/linux/2_add-printer_selection.png" ALT="Add Printer" width="498" height="230"></center>
+        <center>
+            <IMG SRC="../images/linux/2_add-printer_selection.png" class="img-responsive" ALT="Add Printer" width="498" height="260">
+        </center>
+    </div>
+        
+ <!-----------------------------> 
+    
+    <div class="col-md-6">
 
 <p>In the next dialog box that appears, enter `lpd://print/central`.</p>
 
-<center><IMG SRC="../images/linux/3_add-printer_connection.png" ALT="Network LPD Option" width="372" height="197"></center>
+
+        <center>
+            <IMG SRC="../images/linux/3_add-printer_connection.png" class="img-responsive" ALT="Network LPD Option" width="372" height="197">
+        </center>
+    </div>
+        
+ <!-----------------------------> 
+        
+    <div class="col-md-6">
 
 <p>The next step is to name your printer.  You may use whatevere nomenclature you please.</p>
 
-<center><IMG SRC="../images/linux/4_add-printer_name.png" ALT="Naming" width="352" height="162"></center>
+
+        <center>
+            <IMG SRC="../images/linux/4_add-printer_name.png" class="img-responsive" ALT="Naming" width="352" height="162">
+        </center>
+    </div>
+        
+ <!-----------------------------> 
+        
+    <div class="col-md-6">
 
 <p>Now, click the button to upload a PPD file, and choose this PPD file. Click continue</p>
 
-<center><IMG SRC="../images/linux/5_add-printer_type.png" ALT="PDD File Option" width="386" height="246"></center>
+        <center>
+            <IMG SRC="../images/linux/5_add-printer_type.png" class="img-responsive" ALT="PDD File Option" width="386" height="246">
+        </center>
+    </div>
+    
+</div>
 
 
 <!-- This is an experiment with formatting, from akd -->
-<!-- PLEASE NOTE: I cannot get this working correctly -->
+<!-- PLEASE NOTE: I cannot get this working correctly 
 
 
 <div class="table-responsive">
@@ -445,25 +242,41 @@ table th[class*="col-"] {
 
 <!-- This is an experiment with formatting, from jfoos -->
 
-<table>
-	<thead>
-	<tr>
-		<th> Sample Instruction 1</th>
-		<th> Sample Instruction 2</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks . Please note, however, that printing in manner is limited to PDF files only.</p>
-<p>In your browser, go to https://print.simons-rock.edu:9192/app and login with your student credentials. Click the &quot;Web Print&quot; icon on the left-hand side. This will take you to the interface allowing you to submit a print job. Click &quot;Submit a Job&quot; We have only the one Central printer, which should already be selected. Click &quot;Print Options and Account Selection&quot; Choose the number of copies and click &quot;Upload Document&quot; Click &quot;Choose File&quot; and locate the PDF file you wish to print Your print job has been submitted. Now go to a Print Release Station to release the print job</p>
-<p>Troubleshooting:</p>
-		</td>
-		<td>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks . Please note, however, that printing in manner is limited to PDF files only.</p>
-<p>In your browser, go to https://print.simons-rock.edu:9192/app and login with your student credentials. Click the &quot;Web Print&quot; icon on the left-hand side. This will take you to the interface allowing you to submit a print job. Click &quot;Submit a Job&quot; We have only the one Central printer, which should already be selected. Click &quot;Print Options and Account Selection&quot; Choose the number of copies and click &quot;Upload Document&quot; Click &quot;Choose File&quot; and locate the PDF file you wish to print Your print job has been submitted. Now go to a Print Release Station to release the print job</p>
-<p>Troubleshooting:</p>
-		</td>
-	</tr>
-	</tbody>
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateColumns">
+    <tr>
+        <td align="center" valign="top" width="50%" class="templateColumnContainer">
+
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+					<td valign="top" class="leftColumnContent">
+                        <p> Download windows client software </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftColumnContent">
+                        <img src="https://raw.githubusercontent.com/src-its/help-content/master/images/windows/1_download.png" style="max-width:600px;" class="columnImage" />
+                    </td>
+                </tr>
+            </table>
+
+
+        </td>
+        <td align="center" valign="top" width="50%" class="templateColumnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td class="rightColumnContent">
+						<p> Save the downloaded software <p>
+                        <img src="https://raw.githubusercontent.com/src-its/help-content/master/images/windows/1_download.png" style="max-width:600px;" class="columnImage" />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="rightColumnContent">
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 </table>
 
 <!-- end experiment -->
