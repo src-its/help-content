@@ -25,6 +25,14 @@
   <!-- Favicon <!-- Let's find or make an SRC-ITS favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+    
+  <!-- Bootstrap stuff added by Connor; may be n00b -->
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <!-- new CSS added by jfoos -->
 
@@ -139,26 +147,64 @@ Click &quot;Add&quot; to add this printer. This opens the &quot;Setting up 'Cent
 Set this &quot;Central&quot; printer to be your default printer, using the &quot;Selected Printer in Print Dialog&quot; menu.</p>
 
 <h3 id="linux-printer-install">Linux Printer Install</h3>
-    
+
+<div class="row">
+    <div class="col-md-6">
+        
 <p>To set up the Central printer for many common Linux distros, open up a web browser and navigate to &quot;127.0.0.1:631&quot;. This should bring you to the CUPS (Common Unix Printing System) interface. Click &quot;Add Printer&quot;</p>
-
-<center><IMG SRC="../images/linux/LinuxCUPS.png" ALT="CUPS" width="924" height="332"></center>
-
+    
+        <center>
+            <IMG SRC="../images/linux/LinuxCUPS.png" class="img-responsive" ALT="CUPS" width="924" height="332">
+        </center>
+    </div>
+        
+ <!----------------------------->   
+        
+    <div class="col-md-6">
+        
 <p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network &quot;LPD/LPD Host or Printer&quot; option and click continue.</p>
 
-<center><IMG SRC="../images/linux/2_add-printer_selection.png" ALT="Add Printer" width="498" height="230"></center>
+        <center>
+            <IMG SRC="../images/linux/2_add-printer_selection.png" class="img-responsive" ALT="Add Printer" width="498" height="260">
+        </center>
+    </div>
+        
+ <!-----------------------------> 
+    
+    <div class="col-md-6">
 
 <p>In the next dialog box that appears, enter `lpd://print/central`.</p>
 
-<center><IMG SRC="../images/linux/3_add-printer_connection.png" ALT="Network LPD Option" width="372" height="197"></center>
+
+        <center>
+            <IMG SRC="../images/linux/3_add-printer_connection.png" class="img-responsive" ALT="Network LPD Option" width="372" height="197">
+        </center>
+    </div>
+        
+ <!-----------------------------> 
+        
+    <div class="col-md-6">
 
 <p>The next step is to name your printer.  You may use whatevere nomenclature you please.</p>
 
-<center><IMG SRC="../images/linux/4_add-printer_name.png" ALT="Naming" width="352" height="162"></center>
+
+        <center>
+            <IMG SRC="../images/linux/4_add-printer_name.png" class="img-responsive" ALT="Naming" width="352" height="162">
+        </center>
+    </div>
+        
+ <!-----------------------------> 
+        
+    <div class="col-md-6">
 
 <p>Now, click the button to upload a PPD file, and choose this PPD file. Click continue</p>
 
-<center><IMG SRC="../images/linux/5_add-printer_type.png" ALT="PDD File Option" width="386" height="246"></center>
+        <center>
+            <IMG SRC="../images/linux/5_add-printer_type.png" class="img-responsive" ALT="PDD File Option" width="386" height="246">
+        </center>
+    </div>
+    
+</div>
 
 
 <!-- This is an experiment with formatting, from akd -->
