@@ -202,7 +202,11 @@
         <p>The PCClient software identifies your print jobs to the PaperCut system. To print to a campus printer, PCClient must be running so you can login to PaperCut when you submit a print job.</p>
         <h3 id="pcclient-for-windows-mac">PCClient for Windows &amp; Mac</h3>
         <p>Use the links below to download the PCClient installer for your system. (Note: you must be on-campus for these links to work)</p>
-        <p>Windows Mac OSX 10.7-10.10 Mac OSX PRE-10.7</p>
+        <ul>
+              <li><a href="http://safe.simons-rock.edu/software/printers/win-papercut.exe">Windows</a></li>
+              <li><a href="http://safe.simons-rock.edu/software/printers/Papercut_OSX.dmg">Mac OSX 10.7-10.10</a></li>
+              <li><a href="http://safe.simons-rock.edu/software/printers/Papercut_OSX_legacy.dmg">Mac OSX PRE-10.7</a></li>
+        </ul>
         <h3 id="pcclient-for-linux">PCClient for Linux</h3>
         <p>In order for the Linux PCClient to work, you must first have a recent Java version installed on your computer (at least version 5). For many Linux distros, you can check this from the command line with <code>java -version</code> to verify that Java is installed. If not, research the appropriate packages for your system. [If you're running a debian-based distro, for example, install with <code>sudo apt-get install java-common</code>.</p>
         <p>After you have confirmed that Java is installed, download the PCClient package. Extract it with the following command: <code>tar -xf pcclient-linux.tar.gz</code> After extracting the file, find and run the pc-client-linux.sh script to launch the PaperCut client. [Note: You’ll have to run this script each time you wish to use PaperCut; you may wish to configure your machine to auto-start it whenever you login to your X graphical desktop environment].</p>
@@ -280,7 +284,7 @@
         <p>To set up the Central printer for many common Linux distros, open up your web browser and navigate to <code>127.0.0.1:631</code>. This should bring you to the CUPS (Common Unix Printing System) interface. Click <code>Add Printer</code></p>
             <img class='u-max-full-width' src='../images/linux/LinuxCUPS.png' />
         <div class="row">
-          <div class="six columns" id ="">
+          <div class="six columns">
             <p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network "LPD/LPD Host or Printer" option and click continue.</p>
             <img class='u-max-full-width' src='../images/linux/2_add-printer_selection.png' />
           </div>
@@ -290,7 +294,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="six columns" id ="">
+          <div class="six columns">
             <p>The next step is to name your printer. You may use whatevere nomenclature you please.</p>
             <img class='u-max-full-width' src='../images/linux/4_add-printer_name.png' />
           </div>
@@ -303,33 +307,41 @@
         <h2 id="web-print-printing-from-tablets-and-smart-phones">Web Print: Printing from Tablets and Smart Phones</h2>
 
         <div class="row">
-            <p>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks.
-            <strong>Please note, however, that printing in manner is limited to PDF files only.</strong></p>
+            <p>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks. <strong>Please note, however, that printing in manner is limited to PDF files only.</strong></p>
+
+        <div class="row">
+
             <ol>
             <li>In your browser, go to <a href='https://print.simons-rock.edu:9192/app' alt='Online printing interface'>https://print.simons-rock.edu:9192/app</a> and login with your student credentials.</li>
-            <div class="row" id="listOneAndTwo">
-              <div class="four columns">
+            <div class="row">
+              <div class="six columns">
             <li>Click the <code>Web Print</code> icon on the left-hand side. This will take you to the interface allowing you to submit a print job.</li>
                     <img class='u-max-full-width' src='../images/webprint/1-webprint.png' />
               </div>
-              <div class="eight columns">
+              <div class="six columns">
             <li>Click <code>Submit a Job</code> We have only the one Central printer, which should already be selected.</li>
                     <img class='u-max-full-width' src='../images/webprint/2-submitjob.png' />
               </div>
             </div>
-            <li>Click <code>Print Options and Account Selection</code> Choose the number of copies and click <code>Upload Document</code>.</li>
-              <div class="row">
+
+            <div class="row">
               <div class="six columns">
-                <img class='u-max-full-width' src='../images/webprint/3-copies.png' />
+            <li>Click <code>Print Options and Account Selection</code>.</li>
+                    <img class='u-max-full-width' src='../images/webprint/3-printer.png' />
               </div>
               <div class="six columns">
-                <img class='u-max-full-width' src='../images/webprint/3-printer.png' />
+            <li>Choose the number of copies and click <code>Upload Document</code>.</li>
+                    <img class='u-max-full-width' src='../images/webprint/3-copies.png' />
               </div>
             </div>
+
+            <div class="row">
+              <div class="six columns">
             <li>Click <code>Choose File</code> and locate the PDF file you wish to print Your print job has been submitted.</li>
                 <img class='u-max-full-width' src='../images/webprint/4-files.png' />
             <li>Go to any Print Release Station to release the print job.</li>
             </ol>
+
         </div>
 
         <h2>Double-sided Printing</h2>
