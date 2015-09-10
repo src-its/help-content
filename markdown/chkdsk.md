@@ -3,16 +3,25 @@
 
 ## Overview
 
-Check Disk examines disks and can correct many types of common errors on FAT16, FAT32, and NTFS drives. One of the ways Check Disk locates errors is by comparing the vol¬ume bitmap with the disk sectors assigned to files in the file system.
+Check Disk examines disks and can correct many types of common errors on FAT16, FAT32, and NTFS drives. One of the ways Check Disk locates errors is by comparing the volume bitmap with the disk sectors assigned to files in the file system. The tool cannot, however, repair corrupted data within files that appear to be structurally intact.
 
-Check Disk can’t repair corrupted data within files that appear to be structurally intact, however.
-
-You should periodically use the Check Disk tool to check the integrity of disks and to eliminate bad index values (such as may occur when a file transfer is interrupted). You can run Check Disk from the command line or through a graphical interface.
+Use the Check Disk tool periodically to check the integrity of disks and to eliminate bad index values (such as may occur when a file transfer is interrupted). You can run Check Disk from the command line or through a graphical interface.
 
 
 ## Running Chek Disk with a GUI
 
-### Windows
+Then select the Tools tab, and click the “Check Now” button.
+
+![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/532x235ximage78.png.pagespeed.ic.pTkjvODqd0.png)
+
+A little dialog will pop up to allow you to choose the options you want for the disk check. You should check both options if you want to really check the disk properly, but if you just want to do a quick check you could select only the first one.
+
+![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image80.png)
+
+*...or, for the command line:*
+
+Open up an administrator mode command prompt by searching in the Start menu or screen for “cmd” and then right-clicking on the item and choosing “Run as Administrator”. Type in the following command, substituting the drive letter if necessary.
+
 
 ![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image79.png)
 
@@ -40,18 +49,6 @@ On Windows:
 Open up Computer and then right-click on the drive you want to check, and choose Properties, or just click the drive, and then click the Properties button.
 
 ![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image77.png)
-
-Then select the Tools tab, and click the “Check Now” button.
-
-![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/532x235ximage78.png.pagespeed.ic.pTkjvODqd0.png)
-
-A little dialog will pop up to allow you to choose the options you want for the disk check. You should check both options if you want to really check the disk properly, but if you just want to do a quick check you could select only the first one.
-
-![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image80.png)
-
-*...or, for the command line:*
-
-Open up an administrator mode command prompt by searching in the Start menu or screen for “cmd” and then right-clicking on the item and choosing “Run as Administrator”. Type in the following command, substituting the drive letter if necessary.
 
 ![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image98.png)
 
