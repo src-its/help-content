@@ -10,6 +10,10 @@ Use the Check Disk tool periodically to check the integrity of disks and to elim
 
 ## Running Chek Disk with a GUI
 
+Open up Computer and then right-click on the drive you want to check, and choose Properties, or just click the drive, and then click the Properties button.
+
+![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image77.png)
+
 Then select the Tools tab, and click the “Check Now” button.
 
 ![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/532x235ximage78.png.pagespeed.ic.pTkjvODqd0.png)
@@ -43,12 +47,6 @@ When you use this command, Check Disk performs an analysis of the disk and then 
 ## Scheduling a scan for an active drive
 
 The disk must be locked to operate chkdsk. If the disk is in use, `Check Disk displays a prompt that asks whether you want to schedule the disk to be checked the next time you restart the system.
-
-On Windows:
-
-Open up Computer and then right-click on the drive you want to check, and choose Properties, or just click the drive, and then click the Properties button.
-
-![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image77.png)
 
 ![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image98.png)
 
