@@ -20,10 +20,6 @@ Then select the Tools tab, and click the “Check Now” button.
 
 A little dialog will pop up to allow you to choose the options you want for the disk check. You should check both options if you want to really check the disk properly, but if you just want to do a quick check you could select only the first one.
 
-![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image80.png)
-
-*...or, for the command line:*
-
 Open up an administrator mode command prompt by searching in the Start menu or screen for “cmd” and then right-clicking on the item and choosing “Run as Administrator”. Type in the following command, substituting the drive letter if necessary.
 
 
@@ -43,25 +39,6 @@ When you use this command, Check Disk performs an analysis of the disk and then 
 
 `chkdsk /r` locates bad sectors and recovers readable information. It implies `/p`, meaning that you are automatically using CHKDSK /R /F. The /R mean that everything that /F does is done as well as anything extra that /R does. Since everything that it does has already been accounted for, there is no reason to use the /F at all.
 
-
-## Scheduling a scan for an active drive
-
-The disk must be locked to operate chkdsk. If the disk is in use, `Check Disk displays a prompt that asks whether you want to schedule the disk to be checked the next time you restart the system.
-
-![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image98.png)
-
-Click or type Yes to schedule this check.
-
-To Tell if a manual disk Check is scheduled, open an admin mode command prompt, and then type in the following command:
-
-`chkntfs c:`
-
-![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image96.png)
-
-The output is different if the drive is set to be automatically checked.
-
-![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image97.png)
-
 The complete syntax for Check Disk is as follows:
 CHKDSK [volume[[path]filename]] [/F] [/V] [/R] [/X] [/I] [/C] [/L[:size]]
 
@@ -78,3 +55,28 @@ The options and switches for Check Disk are used as follows:
 * `/C` Skips checking of cycles within the folder structure (NTFS only)
 * `/L:size` Sets the log file size (NTFS only)
 * `/B` Re-evaluates bad clusters on the volume (NTFS only; implies /R)
+
+
+## Scheduling a scan for an active drive
+
+The disk must be locked to operate chkdsk. If the disk is in use, Check Disk will display a prompt that asks whether you want to schedule the disk to be checked the next time you restart the system.
+
+*On Windows*
+
+![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image80.png)
+
+*...or, for the command line:*
+
+![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image98.png)
+
+Click or type Yes to schedule this check.
+
+To Tell if a manual disk Check is scheduled, open an admin mode command prompt, and then type in the following command:
+
+`chkntfs c:`
+
+![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image96.png)
+
+The output is different if the drive is set to be automatically checked.
+
+![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image97.png)
