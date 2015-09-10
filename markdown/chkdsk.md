@@ -14,6 +14,8 @@ You should periodically use the Check Disk tool to check the integrity of disks 
 
 ### Windows
 
+![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image79.png)
+
 ## Running Check Disk from the Command Line
 
 You can run Check Disk from an elevated command prompt or within other tools. At the elevated command prompt, you can test the integrity of drive C by typing the following command:
@@ -26,12 +28,12 @@ Adding flags tells `chkdsk` what action to perform.  The `/f` parameter tells it
 
 When you use this command, Check Disk performs an analysis of the disk and then repairs any errors it finds, provided that the disk isn’t in use.
 
-`chkdsk /r` ' means that you are automatically using CHKDSK /R /F. The /R mean that everything that /F does is done as well as anything extra that /R does. Since everything that it does has already been accounted for, there is no reason to use the /F at all.
+`chkdsk /r` locates bad sectors and recovers readable information. It implies `/p`, meaning that you are automatically using CHKDSK /R /F. The /R mean that everything that /F does is done as well as anything extra that /R does. Since everything that it does has already been accounted for, there is no reason to use the /F at all.
 
 
 Scheduling a scan for an active drive
 
-The disk must be locked to operate chkdsk. If the disk is in use, Check Disk displays a prompt that asks whether you want to schedule the disk to be checked the next time you restart the system.
+The disk must be locked to operate chkdsk. If the disk is in use, `Check Disk displays a prompt that asks whether you want to schedule the disk to be checked the next time you restart the system.
 
 Click or type Yes to schedule this check.
 
@@ -43,11 +45,11 @@ The options and switches for Check Disk are used as follows:
 * volume Sets the volume to work with
 * path/filename Specifies files to check for fragmentation (FAT16 and FAT32 only)
 
-* /F Fixes errors on the disk
-* /V Displays the full path and name of every file on the disk (FAT16 and FAT32); displays cleanup messages if any (NTFS)
-* /R Locates bad sectors and recovers readable information (implies /F)
-* /X Forces the volume to dismount first if necessary (implies /F)
-* /I Performs a minimum check of index entries (NTFS only)
-* /C Skips checking of cycles within the folder structure (NTFS only)
-* /L:size Sets the log file size (NTFS only)
-* /B Re-evaluates bad clusters on the volume (NTFS only; implies /R)
+* `/F` Fixes errors on the disk
+* `/V` Displays the full path and name of every file on the disk (FAT16 and FAT32); displays cleanup messages if any (NTFS)
+* `/R` Locates bad sectors and recovers readable information (implies /F)
+* `/X` Forces the volume to dismount first if necessary (implies /F)
+* `/I` Performs a minimum check of index entries (NTFS only)
+* `/C` Skips checking of cycles within the folder structure (NTFS only)
+* `/L:size` Sets the log file size (NTFS only)
+* `/B` Re-evaluates bad clusters on the volume (NTFS only; implies /R)``
