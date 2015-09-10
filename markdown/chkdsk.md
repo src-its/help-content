@@ -27,20 +27,13 @@ Open up an administrator mode command prompt by searching in the Start menu or s
 
 ## Running Check Disk from the Command Line
 
-You can run Check Disk from an elevated command prompt or within other tools. At the elevated command prompt, you can test the integrity of drive C by typing the following command:
+You can run Check Disk from an elevated command prompt or within other tools.  Open up an administrator mode command prompt by searching in the Start menu or screen for “cmd” and then right-clicking on the item and choosing “Run as Administrator”.
 
-`chkdsk C:`
+At the elevated command prompt, you can test the integrity of drive C by typing `chkdsk C:` . Additional flags tell Check Disk  what action to perform.  The `/f` parameter, for example, tells it to performs an analysis of the disk and then repairs any errors it finds, provided that the disk isn’t in use. `chkdsk /r` locates bad sectors and recovers readable information. It implies `/p`, meaning that you are automatically using `chkdsk /r /f`.
 
-Adding flags tells `chkdsk` what action to perform.  The `/f` parameter tells it to fix errors on the disk:
+The complete syntax for Check Disk is:
 
-`chkdsk C: /f`
-
-When you use this command, Check Disk performs an analysis of the disk and then repairs any errors it finds, provided that the disk isn’t in use.
-
-`chkdsk /r` locates bad sectors and recovers readable information. It implies `/p`, meaning that you are automatically using CHKDSK /R /F. The /R mean that everything that /F does is done as well as anything extra that /R does. Since everything that it does has already been accounted for, there is no reason to use the /F at all.
-
-The complete syntax for Check Disk is as follows:
-CHKDSK [volume[[path]filename]] [/F] [/V] [/R] [/X] [/I] [/C] [/L[:size]]
+`CHKDSK [volume[[path]filename]] [/F] [/V] [/R] [/X] [/I] [/C] [/L[:size]]`
 
 The options and switches for Check Disk are used as follows:
 
