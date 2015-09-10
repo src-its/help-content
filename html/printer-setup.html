@@ -30,7 +30,7 @@
   .container {
     position: relative;
     width: 100%;
-    max-width: 960px;
+    max-width: 942px;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box; }
@@ -190,21 +190,29 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
+
         <h2>Quick Overview:</h2>
-        <p>We use the PaperCut managed system printing for students on campus. This allows quick and easy printing from any of the many release stations. The general process for connecting to PaperCut printing system on any computer is as follows:
-          Install and run the PaperCut Client software (see download links below), and enter your Simon’s Rock login credentials. Connect to the central printer (also called the queue); it’s conveniently named “Central” and it resides on the server “print” Make the central printer your default.
-          Details are provided below for Windows, Mac, and Linux setups.
-        </p>
+
+        <p>We use the PaperCut managed system printing for students on campus. This allows quick and easy printing from any of the many release stations. The general process for connecting to PaperCut printing system on any computer is as follows:</p>
+        <p>Install and run the PaperCut Client software (see download links below), and enter your Simon’s Rock login credentials. Connect to the central printer (also called the queue); it’s conveniently named “Central” and it resides on the server “print” Make the central printer your default.</p>
+        <p>Details are provided below for Windows, Mac, and Linux setups.</p>
+
         <h2 id="papercut-client-setup">PaperCut Client Setup:</h2>
+
         <p>The PCClient software identifies your print jobs to the PaperCut system. To print to a campus printer, PCClient must be running so you can login to PaperCut when you submit a print job.</p>
         <h3 id="pcclient-for-windows-mac">PCClient for Windows &amp; Mac</h3>
         <p>Use the links below to download the PCClient installer for your system. (Note: you must be on-campus for these links to work)</p>
-        <p>Windows Mac OSX 10.7-10.10 Mac OSX PRE-10.7</p>
+        <ul>
+              <li><a href="http://safe.simons-rock.edu/software/printers/win-papercut.exe">Windows</a></li>
+              <li><a href="http://safe.simons-rock.edu/software/printers/Papercut_OSX.dmg">Mac OSX 10.7-10.10</a></li>
+              <li><a href="http://safe.simons-rock.edu/software/printers/Papercut_OSX_legacy.dmg">Mac OSX PRE-10.7</a></li>
+        </ul>
         <h3 id="pcclient-for-linux">PCClient for Linux</h3>
-        <p>In order for the Linux PCClient to work, you must first have a recent Java version installed on your computer (at least version 5). For many Linux distros, you can check this from the command line with <code>java -version</code> to verify that Java is installed. If not, research the appropriate packages for your system. [If you're running a debian-based distro, for example, install with <code>sudo apt-get install java-common</code>.]</p>
+        <p>In order for the Linux PCClient to work, you must first have a recent Java version installed on your computer (at least version 5). For many Linux distros, you can check this from the command line with <code>java -version</code> to verify that Java is installed. If not, research the appropriate packages for your system. [If you're running a debian-based distro, for example, install with <code>sudo apt-get install java-common</code>.</p>
         <p>After you have confirmed that Java is installed, download the PCClient package. Extract it with the following command: <code>tar -xf pcclient-linux.tar.gz</code> After extracting the file, find and run the pc-client-linux.sh script to launch the PaperCut client. [Note: You’ll have to run this script each time you wish to use PaperCut; you may wish to configure your machine to auto-start it whenever you login to your X graphical desktop environment].</p>
 
         <h3 id="auto-login">Automatic Login</h3>
+
         <p>The Windows and Mac installers configure the PCClient software to run each time you log into your computer. After installation, PCClient will prompt you to login with your Simon's Rock user ID and password. (These are the same credentials you use for campus email and the <code>Inside</code> web pages. Note that your user ID is just the first part of your email address, not the <span class="citation" data-cites="simons-rock.edu">@simons-rock.edu</span>). If you are running it on your own computer, you may specify that it should save your credentials <code>Always</code> so that you do not need to re-enter your data each time you print.</p>
         <p><strong>At shared library and lab computers, PaperCut will only allow you to save your login credentials for a couple of minutes.</strong></p>
 
@@ -222,7 +230,9 @@
             </ol>
 
         <!-- SCREENSHOTS NEEDED -->
+
           <h4 id="windows-vista">Windows Vista</h4>
+
           <ol>
             <li>Download either this 32bit driver to your system or this 64bit driver.</li>
             <li>Once downloaded, run the program and extract the contents to <code>C:LJ4200 PCL6 Driver</code> </li>
@@ -241,15 +251,18 @@
             <li>Set the printer as your default and click Next</li>
           </ol>
             <!-- Click Browse and navigate to <code>C:LJ4200 PCL6 Driver<code> Select <code>hpc4200c<code> and click <code>Open<code> then <code>OK<code> Select <code>HP Laserjet 4200 PCL 6<code> and click Next Set the printer as your default and click Next</p> !-->
+
         <h3 id="mac-printer-install">Mac Printer Install</h3>
+
+        <!-- SCREENSHOTS NEEDED -->
         <ol>
           <li>
             Open Apple Menu &gt; System Preferences &gt; Print &amp; Scan.
-            <ol>
+            <ul>
               <li>
                 Click the plus icon (+) to add a new printer.
               </li>
-            </ol>
+            </ul>
           </li>
           <li>
             At the top of the <code>Add</code> printer window, choose <code>IP</code>, and select Protocol: <code>Line Printer Daemon - LPD</code>
@@ -265,11 +278,13 @@
             For the <code>Use:</code> driver menu, select <code>Generic PCL Printer</code>.
           </li>
         </ol>
+
         <h3 id="linux-printer-install">Linux Printer Install</h3>
+
         <p>To set up the Central printer for many common Linux distros, open up your web browser and navigate to <code>127.0.0.1:631</code>. This should bring you to the CUPS (Common Unix Printing System) interface. Click <code>Add Printer</code></p>
             <img class='u-max-full-width' src='../images/linux/LinuxCUPS.png' />
         <div class="row">
-          <div class="six columns" id ="">
+          <div class="six columns">
             <p>A dialog box similar to the following should appear, providing you with a list of all printers recognized as being on the network. Select the Network "LPD/LPD Host or Printer" option and click continue.</p>
             <img class='u-max-full-width' src='../images/linux/2_add-printer_selection.png' />
           </div>
@@ -279,7 +294,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="six columns" id ="">
+          <div class="six columns">
             <p>The next step is to name your printer. You may use whatevere nomenclature you please.</p>
             <img class='u-max-full-width' src='../images/linux/4_add-printer_name.png' />
           </div>
@@ -288,32 +303,68 @@
             <img class='u-max-full-width' src='../images/linux/5_add-printer_type.png' />
           </div>
         </div>
+
         <h2 id="web-print-printing-from-tablets-and-smart-phones">Web Print: Printing from Tablets and Smart Phones</h2>
+
         <div class="row">
-            <p>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks.
-            <strong>Please note, however, that printing in manner is limited to PDF files only.</strong></p>
+            <p>‘Web Print’ in an online interface for printing from tablets, smartphones, and Chromebooks. <strong>Please note, however, that printing in manner is limited to PDF files only.</strong></p>
+
+        <div class="row">
+
             <ol>
             <li>In your browser, go to <a href='https://print.simons-rock.edu:9192/app' alt='Online printing interface'>https://print.simons-rock.edu:9192/app</a> and login with your student credentials.</li>
+            <div class="row">
+              <div class="six columns">
             <li>Click the <code>Web Print</code> icon on the left-hand side. This will take you to the interface allowing you to submit a print job.</li>
+                    <img class='u-max-full-width' src='../images/webprint/1-webprint.png' />
+              </div>
+              <div class="six columns">
             <li>Click <code>Submit a Job</code> We have only the one Central printer, which should already be selected.</li>
-            <li>Click <code>Print Options and Account Selection</code> Choose the number of copies and click <code>Upload Document</code>.</li>
+                    <img class='u-max-full-width' src='../images/webprint/2-submitjob.png' />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="six columns">
+            <li>Click <code>Print Options and Account Selection</code>.</li>
+                    <img class='u-max-full-width' src='../images/webprint/3-printer.png' />
+              </div>
+              <div class="six columns">
+            <li>Choose the number of copies and click <code>Upload Document</code>.</li>
+                    <img class='u-max-full-width' src='../images/webprint/3-copies.png' />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="six columns">
             <li>Click <code>Choose File</code> and locate the PDF file you wish to print Your print job has been submitted.</li>
+                <img class='u-max-full-width' src='../images/webprint/4-files.png' />
             <li>Go to any Print Release Station to release the print job.</li>
             </ol>
-            </div>
-            
-            <h2>How to print double-sided</h2>
+
+        </div>
+
+        <h2>Double-sided Printing</h2>
+
+        <p>PaperCut will prompt you to select double-sided printing for large documents to help save paper; you can over-ride this before your print job before it is sent to the server if necessary.</p>
+
         <h3>Windows</h3>
-        <p>In order to choose double-sided printing, after you choose to print a document (<code>File</code> > <code>Print</code> in most programs), select your printer and click <code>Preferences</code>. From here, you can choose <code>Two-Sided (Duplex) Printing</code> to print double-sided or <code>General Everyday Printing</code> to print single-sided. If you print a large document single-sided you will be prompted by the papercut software to inform you that you would save paper by instead printing double-sided and are given an opportunity to change your print job before it is sent to the server.</p>
+
+        <p>For Windows machines, you can enable double-sided printing from the print set-up interface (<code>File</code> > <code>Print</code> in most programs).  First, select your printer ('Central') and then click into <code>Preferences</code>. From here, choose <code>Two-Sided (Duplex) Printing</code> for double-sided printing or <code>General Everyday Printing</code> for single-sided printing.</p>
+        <!-- SCREENSHOTS NEEDED -->
+
         <h3>Mac</h3>
-        <p>In order to choose double-sided printing, after you choose to print a document (<code>File</code> > <code>Print</code> in most programs), to the right of the "Copies" field, check off <code>Two-Sided</code> and click <code>print</code>.
-          If you print a large document single-sided you will be prompted by the papercut software to inform you that you would save paper by instead printing double-sided and are given an opportunity to change your print job before it is sent to the server.
-        </p>
-        <h3>Troubleshooting</h3>
-          <p>	After you submit a job to the central server, PaperCut will pop-up a dialog box to remind you that the job is waiting in the queue for you to release it. If you do not see this prompt, you will need to resolve the problem and try to print again before you go to a release station to output your job.</p>
-        <p>	You may also log in to the PaperCut server your printing history and also check which jobs you have queued for printing. Use the link above, or the <code>Details</code> link on the PCClient software window.</p>
-          <p>	Confirm that the PCClient software is running before you print. On Windows, there should be a PCClient icon in the tray near the clock. On Macs, check that it is running in the Dock. Manually restart the PCClient program if it is not running.</p>
-          <p>	If PCClient is running but does not pop up a login when you first print, confirm that you installed the printer using the exact addresses shown above. If you enter the wrong address for the print queue, PaperCut will not respond to your print requests.</p>
+
+        <p>Mac print interface is accessed within a document via <code>File</code> > <code>Print</code> for most programs.  For double-sided printing, look to the right of the "Copies" field, check off <code>Two-Sided</code> and click <code>print</code>.
+        <!-- SCREENSHOTS NEEDED -->
+
+        <h2>Troubleshooting</h2>
+
+          <p>After you submit a job to the central server, PaperCut will issue a pop-up notification to remind you that the job is waiting in the queue for you to release it. If you do not see this prompt, you will need to resolve the problem and try to print again before you go to a release station to output your job.</p>
+        <p>You may also log in to the PaperCut server your printing history and also check which jobs you have queued for printing. Use the link above, or the <code>Details</code> link on the PCClient software window.</p>
+        <p>Confirm that the PCClient software is running before you print. On Windows, there should be a PCClient icon in the tray near the clock. On Macs, check that it is running in the Dock. Manually restart the PCClient program if it is not running.</p>
+          <p>If PCClient is running but does not pop up a login when you first print, confirm that you installed the printer using the exact addresses shown above. If you enter the wrong address for the print queue, PaperCut will not respond to your print requests.</p>
+
   </div>
 
 <!-- End Document
