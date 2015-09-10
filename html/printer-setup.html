@@ -53,10 +53,11 @@
       width: 80%; }
     .column,
     .columns {
-      margin-left: 4%; }
+      margin-left: 4%;}
     .column:first-child,
     .columns:first-child {
-      margin-left: 0; }
+      margin-left: 0;
+    }
 
     .one.column,
     .one.columns                    { width: 4.66666666667%; }
@@ -111,7 +112,11 @@
 
   }
   p {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-height: 42px; }
     /* Lists
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     ul {
@@ -150,10 +155,12 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– */
       .u-full-width {
         width: 100%;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        }
       .u-max-full-width {
         max-width: 100%;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+         vertical-align: 0;}
       .u-pull-right {
         float: right; }
       .u-pull-left {
@@ -303,7 +310,7 @@
           </div>
           <div class="six columns">
             <p>In the next dialog box that appears, enter `lpd://print/central`.</p>
-            <img class='u-max-full-width' src='../images/linux/3_add-printer_connection.png' />
+            <img id='66' class='u-max-full-width' src='../images/linux/3_add-printer_connection.png' />
           </div>
         </div>
         <div class="row">
