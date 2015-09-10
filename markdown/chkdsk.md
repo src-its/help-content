@@ -1,4 +1,4 @@
-# Using `chkdsk` to maintain a healthy system
+# Using `chkdsk` to maintain a healthy Windows / NTDF file system
 
 
 ## Overview
