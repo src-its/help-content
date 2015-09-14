@@ -1,6 +1,5 @@
 
-
-A signature is a bit of text (such as your contact information or a favorite quote) that’s automatically inserted at the bottom of every message you send.
+A signature is a bit of text that is automatically appended to your email messages (including both new messages and replies to incoming messages). They are generally used to provide additional contact information, legal terms or other information that is relevant to every email. 
 
 
 ## Gmail
@@ -42,6 +41,24 @@ If you already set up a signature while on a computer, your regular signature wi
 1. Touch the text directly below "Mobile Signature" to edit your signature text.
 1. Touch Save.
 
+## ThunderBird
+
+
+### HTML Signatures
+
+To use HTML formatting in your signature, check Use HTML and format the Signature text with the desired HTML mark-up. If you send messages in text (rather than HTML) format, text characters will be substituted for the HTML markup.
+
+![](https://support.cdn.mozilla.net/media/uploads/gallery/images/2011-03-14-10-08-04-e206b1.jpg)
+
+
+...results in...
+
+
+![](https://support.cdn.mozilla.net/media/uploads/gallery/images/2011-03-14-10-08-07-604582.jpg)
+
+
+
+
 ## RoundCube
 
 In Roundcube, click on the Settings link at the top right (the gear icon) and then select "Identities" from the list at the left.  Now click on your email address in the 2nd column and you can then add a signature in the pane on the right at the bottom.
@@ -49,4 +66,5 @@ In Roundcube, click on the Settings link at the top right (the gear icon) and th
 
 ## References:
 
-* [](https://support.google.com/mail/answer/8395?hl=en)
+* [Gmail Help: Signature](https://support.google.com/mail/answer/8395?hl=en)
+* [MozillaSupport: ThunderBird > Signatures](https://support.mozilla.org/en-US/kb/signatures#w_html-signatures)
