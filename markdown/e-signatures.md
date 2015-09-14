@@ -43,6 +43,24 @@ If you already set up a signature while on a computer, your regular signature wi
 
 ## ThunderBird
 
+Signatures are created in Thunderbird's Account Settings interface. Click Edit | Account Settings, and then, in the left panel, select the account for which you want to create a signature.
+
+![](https://support.cdn.mozilla.net/media/uploads/gallery/images/2011-03-14-10-05-42-4bdd77.jpg)
+
+If you have multiple email accounts, you must configure signatures separately for each account.
+
+### Plain-text signatures
+
+To configure a plain-text signature, enter the text you want to append to each outgoing message in the Signature text field. Plain text signatures work with messages formatted both in HTML and in text.
+
+![](https://support.cdn.mozilla.net/media/uploads/gallery/images/2011-03-14-10-05-41-ec11a4.jpg)
+
+
+...results in...
+
+
+![](https://support.cdn.mozilla.net/media/uploads/gallery/images/2011-03-14-10-05-42-d0a904.jpg)
+
 
 ### HTML Signatures
 
