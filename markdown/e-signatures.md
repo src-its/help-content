@@ -13,7 +13,7 @@ Signatures are separated from the rest of your message by two dashes. To see a s
 1. Click the gear in the top right .
 1. Select Settings.
 1. Scroll down to the “Signature” section and enter your new signature text in the box. You can format your text using the buttons directly above the text box.
-    * ![](https://lh5.ggpht.com/g99GWJ-B05GnVYnpD54GYrRKGMjLp2vxXujGLmIl6zjRU-y7ohGTHbQekH5_LfKB7xNtyFll=w453)
+![](https://lh5.ggpht.com/g99GWJ-B05GnVYnpD54GYrRKGMjLp2vxXujGLmIl6zjRU-y7ohGTHbQekH5_LfKB7xNtyFll=w453)
 
 Access more tips and tricks for e-signatures on Gmail via the [Google Help Center](https://support.google.com/mail/answer/8395?hl=en)
 
