@@ -14,7 +14,6 @@ Signatures are separated from the rest of your message by two dashes. To see a s
 1. Select Settings.
 1. Scroll down to the “Signature” section and enter your new signature text in the box. You can format your text using the buttons directly above the text box.
     * ![](https://lh5.ggpht.com/g99GWJ-B05GnVYnpD54GYrRKGMjLp2vxXujGLmIl6zjRU-y7ohGTHbQekH5_LfKB7xNtyFll=w453)
-1. 
 
 Access more tips and tricks for e-signatures on Gmail via the [Google Help Center](https://support.google.com/mail/answer/8395?hl=en)
 
@@ -79,8 +78,11 @@ To use HTML formatting in your signature, check Use HTML and format the Signatur
 
 ## RoundCube
 
-In Roundcube, click on the Settings link at the top right (the gear icon) and then select "Identities" from the list at the left.  Now click on your email address in the 2nd column and you can then add a signature in the pane on the right at the bottom.
-
+![In Roundcube, click on the Settings link at the top right (the gear icon) and then select "Identities" from the list at the left.  Now click on your email address in the 2nd column and you can then add a signature in the pane on the right at the bottom.]
+1. In Roundcube, click on the Settings link at the top right (the gear icon) and then select "Identities" from the list at the left.
+![](http://cdn.inmotionhosting.com/support/images/stories/edu/email/roundcube/create-signature/roundcube-settings-identities.png)
+2. Then click on your email address in the 2nd column and click on the signatures tab in the right hand panel. Add your signature here.
+![](http://cdn.inmotionhosting.com/support/images/stories/edu/email/roundcube/create-signature/roundcube-settings-identities-signature.png)
 
 ## References:
 
