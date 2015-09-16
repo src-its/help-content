@@ -3,7 +3,7 @@
 
 A signature is a bit of text that is automatically appended to your email messages (including both new messages and replies to incoming messages). They are generally used to provide additional contact information, legal terms or other information that is relevant to every email. 
 
-* [RoundCube](#RoundCube) [the webmail client for Simon's Rock emails]
+* [RoundCube](#RoundCube) [the webmail client used at Simon's Rock]
 * [Gmail](#Gmail) [a popular web email client that plays well with mobile devices]
 * [ThunderBird](#ThunderBird) [ITS' recommended desktop email client]
 
