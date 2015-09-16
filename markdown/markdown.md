@@ -1,3 +1,6 @@
+# A Bit About Markdown
+
+
 Markdown refers to both:
 
 1. a [markup syntax](http://en.wikipedia.org/wiki/Markup_language) that was designed as an "easy-to-read, easy-to-write plain text format"
@@ -10,6 +13,11 @@ It is important to note that there is no clearly-defined Markdown standard.  The
 Markdown can be [converted easily](Working-with-Pandoc) to other formatting and printing languages.  It is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
 Markdown is free software, available under a [BSD-style open source license](http://daringfireball.net/projects/markdown/license).
+
+
+# Markdown Cheatsheet
+
+> This cheatsheet is taken from [a Gist](https://gist.github.com/jonschlinkert/5854601) by Jon Schlinkert.  Rendering can be enabled using the [{{gist}} helper](https://github.com/assemble/handlebars-helpers#gist) [without it, code syntax colorization is not visible].
 
 
 # Typography 
