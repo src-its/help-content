@@ -18,7 +18,7 @@ Before you start using Git, you have to make it available on your computer. Even
 
 ### [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Installing on Linux
+#### Installing on Linux
 
 If you want to install Git on Linux via a binary installer, you can generally do so through the basic package-management tool that comes with your distribution. If you’re on Fedora for example, you can use yum:
 
