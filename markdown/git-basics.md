@@ -4,7 +4,7 @@
 
 A Version Control System (VCS) is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 
-If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System is a very wise thing to use. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System is a very wise thing to use. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you make a mess of your work or lose files, you can easily recover. In addition, you get all this for very little overhead.
 
 Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
 
