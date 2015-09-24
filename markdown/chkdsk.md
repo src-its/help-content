@@ -1,4 +1,4 @@
-# Using `chkdsk` to maintain a healthy Windows / NTDF file system
+# Using `chkdsk` to maintain a healthy Windows file system [NTFS]
 
 
 ## Overview
@@ -29,7 +29,7 @@ Open up an administrator mode command prompt by searching in the Start menu or s
 
 You can run Check Disk from an elevated command prompt or within other tools.  Open up an administrator mode command prompt by searching in the Start menu or screen for “cmd” and then right-clicking on the item and choosing “Run as Administrator”.
 
-At the elevated command prompt, you can test the integrity of drive C by typing `chkdsk C:` . Additional flags tell Check Disk  what action to perform.  The `/f` parameter, for example, tells it to performs an analysis of the disk and then repairs any errors it finds, provided that the disk isn’t in use. `chkdsk /r` locates bad sectors and recovers readable information. It implies `/p`, meaning that you are automatically using `chkdsk /r /f`.
+At the elevated command prompt, you can test the integrity of drive C by typing `chkdsk C:` . Additional flags tell Check Disk  what action to perform.  The `/f` parameter, for example, tells it to performs an analysis of the disk and then repairs any errors it finds, provided that the disk isn’t in use. `chkdsk /r` locates bad sectors and recovers readable information. It implies `/f`, meaning that you are automatically using `chkdsk /r /f`.
 
 The complete syntax for Check Disk is:
 
@@ -54,11 +54,11 @@ The options and switches for Check Disk are used as follows:
 
 The disk must be locked to operate chkdsk. If the disk is in use, Check Disk will display a prompt that asks whether you want to schedule the disk to be checked the next time you restart the system.
 
-*On Windows*
+*Via the Windows GUI*
 
 ![](http://cdn5.howtogeek.com/wp-content/uploads/2010/11/image80.png)
 
-*...or, for the command line:*
+*...or, from the command line:*
 
 ![](http://cdn5.howtogeek.com/wp-content/uploads/2008/02/image98.png)
 
