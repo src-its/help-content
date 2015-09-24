@@ -1,12 +1,45 @@
+[Git](https://git-scm.com/) is a [free and open source](https://git-scm.com/about/free-and-open-source) distributed version control system (VCS) designed to handle everything from small to very large projects with speed and efficiency.
 
-### Initializing a Git folder
+## A bit about VCS and applications for Git
+
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+
+If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+
+Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
+
+To deal with this issue, programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control. In a Distributed Version Control Systems (DVCSs), such as Git, Mercurial, Bazaar or Darcs, clients don’t just check out the latest snapshot of the files: they fully mirror the repository. Thus if any server dies, and these systems were collaborating via it, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
+
+Furthermore, many of these systems deal pretty well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project. This allows you to set up several types of workflows that aren’t possible in centralized systems, such as hierarchical models.
+
+## Getting Started
+
+Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself.
+
+### [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Installing on Linux
+
+If you want to install Git on Linux via a binary installer, you can generally do so through the basic package-management tool that comes with your distribution. If you’re on Fedora for example, you can use yum:
+
+`$ sudo yum install git`
+If you’re on a Debian-based distribution like Ubuntu, try apt-get:
+
+`$ sudo apt-get install git`
+For more options, there are instructions for installing on several different Unix flavors on the Git website, at http://git-scm.com/download/linux.
+
+### Initializing a Git Folder
 
 Create a git repo locally just by making a folder, `cd` into it and execute  `git init`.
 
 
 Understand what commits and branches are and use them as necessary.
 
-### Commits
+### Adding Content to a Git Folder / Staging Changes
+
+
+
+### Committing Your Additions / Changes
 
 http://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History
 
@@ -49,3 +82,11 @@ Once production becomes live and changes less frequently, we might tag the produ
 | question | |
 | urgent | |
 | wontfix | |
+
+
+## References:
+
+* https://git-scm.com/about
+* https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+
+
