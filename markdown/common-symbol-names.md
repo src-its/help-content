@@ -5,6 +5,8 @@
 
 `-` minus
 
+`_` underscore
+
 `/` solidus, (forward) slash
 
 `\` backslash
@@ -12,6 +14,8 @@
 `*` asterisk
 
 `%` percent [in python, the `%` is for a "modulus" and not a "percent"]
+
+`=` equals
 
 `<` less-than
 
