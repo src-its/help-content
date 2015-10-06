@@ -16,6 +16,27 @@ Furthermore, many of these systems deal pretty well with having several remote r
 
 Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself.
 
+---
+
+NATHANIAL:
+
+Please add section here:
+
+1. we at SRC use GitHub as a Git front-end
+3. to use GitHub, create an account
+2. set up ssh keys to connect without always entering a password 
+
+
+some useful resources
+
+* https://modulesunraveled.com/very-basics-git/creating-account-github-and-setting-ssh-keys
+* https://help.github.com/articles/generating-ssh-keys/
+* https://help.github.com/articles/set-up-git/
+
+
+---
+
+
 ### [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 #### Installing on Linux
