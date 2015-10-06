@@ -1,4 +1,4 @@
-## A Bit About Git
+﻿## A Bit About Git
 
 [Git](https://git-scm.com/) is a [free and open source](https://git-scm.com/about/free-and-open-source) distributed version control system (VCS) designed to handle everything from small to very large projects with speed and efficiency.
 
@@ -26,12 +26,25 @@ Please add section here:
 3. to use GitHub, create an account
 2. set up ssh keys to connect without always entering a password 
 
-
-some useful resources
-
+At SRC-ITS we use GitHub as a Git front-end for the capability of simultaneously editing the same document and being able to easily identify changes people have made in a document.  To use GitHub:
+1. Create an account.  Go to GitHub and click join, https://github.com/join
+2. Fill out your information and select a plan
+3. Verify your email
+4. Now add your SSH key so GitHub can identify your computer without having to enter your password every time.
+5. First, check existing SSH keys in your computer by entering $ ls -al ~/.ssh in your GitBash
+6. To generate a public/private SSH key, copy and ssh-keygen -t rsa -b 4096 -C "your_email@example.com" but make sure to put your email there instead.
+7. Confirm the file in which you want to keep your SSH key and then come up with a passphrase.  You will be given a fingerprint of your SSH key as well as your identification.
+8. Now that you've generated a working SSH key, attach it to your GitHub.  First make sure your ssh-agent is turned on, prompt $ ssh-agent -s for Gitbash and $ eval $(ssh-agent -s) for another Terminal.
+9. Add your SSH key to the ssh-agent by entering $ ssh-add ~/.ssh/id_rsa
+10. Now copy your SSH key to your clipboard
+11. Use this copy by going to your GitHub settings, under your profile in the top right corner of the window.
+12. Under user settings, go to SSH keys, and click add SSH key.
+13. In the Title field add a label, and then paste your key into the Key field, then click add key at the bottom.
+ 
+Sources:
 * https://modulesunraveled.com/very-basics-git/creating-account-github-and-setting-ssh-keys
 * https://help.github.com/articles/generating-ssh-keys/
-* https://help.github.com/articles/set-up-git/
+
 
 
 ---
