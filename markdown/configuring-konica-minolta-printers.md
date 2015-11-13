@@ -27,7 +27,7 @@ After clicking 'OK', your printer should appear as having a digitally-signed dri
 
 ### Configuring Konica Minolta Bizhubs After Installation
 
-There are a few post-connection steps necessary before one can print to our Konica Minolta BizHubs.
+There are a few post-connection steps necessary before one can print to our Konica Minolta BizHubs. To perform these configurations, first open the 'Printer Properties' dialog array, which can be accessed by right-clicking the installed printer icon [shown in Control Panel > Devices and Printers] menu
 
 ![](../images/src-printer-setup/10_printer-config.png)
 
