@@ -27,12 +27,22 @@ After clicking 'OK', your printer should appear as having a digitally-signed dri
 
 ### Configuring Konica Minolta Bizhubs After Installation
 
-There are a few post-connection steps necessary before one can print to our Konica Minolta BizHubs. To perform these configurations, first open the 'Printer Properties' dialog array, which can be accessed by right-clicking the installed printer icon [shown in Control Panel > Devices and Printers] menu
+There are post-connection configuration steps necessary to allow printing to our Konica Minolta BizHubs.
+
+Begin by opening 'Printer Properties' dialog array, which can be accessed by right-clicking the installed printer icon [shown in Control Panel > Devices and Printers].
 
 ![](../images/src-printer-setup/10_printer-config.png)
 
+Click on the 'Configure tab' in the Properties dialog array, then click 'Obtain Settings'.
+
 ![](../images/src-printer-setup/11_ printer-config.png)
+
+In the pop-up 'Obtain Settings' box, uncheck the box where it says 'Auto' and click 'OK'.
 
 ![](../images/src-printer-setup/12_printer-config_uncheck-auto.png)
 
+With the auto-setting configuration disabled, you will now me able to manually set device options. To enable printing to the BizHubs, you'll need to disable the setting for 'Account Track', as shown:
+
 ![](../images/src-printer-setup/13_printer-config_uncheck-disable-account-track.png)
+
+And that's it!
