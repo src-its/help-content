@@ -1,4 +1,4 @@
-## Configuing Konica Minolta Printers
+## Configuring Konica Minolta Printers
 
 This article applies specifically to Windows computers.
 
