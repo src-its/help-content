@@ -22,7 +22,7 @@ After you have the files downloaded and extracted, return to the Add Printer Wiz
 
 After clicking 'OK', your printer should appear as having a digitally-signed driver. If so, click 'Next'.
 
-![](../images/src-printer-setup/07_add-printer-select.png)
+![](../images/src-printer-setup/08_add-printer-select.png)
 
 
 ### Configuring Konica Minolta Bizhubs After Installation
