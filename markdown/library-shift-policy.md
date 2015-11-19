@@ -1,4 +1,4 @@
-CA Library Shift Workflow
+##CA Library Shift Workflow
 
 In order to sign up for a library shift, each CA must commit to implementing the following sequence of activities:
 
@@ -22,10 +22,14 @@ Since we benefit by adding a bit of HTML formatting when publishing our theme ni
 <b>@ the CA Table: Become a Linux Command Line Ninja</b>
 </p>
 <p>
-Simon's Rock ITS Student Computer Assistants are hosting weekly thematic discussions on topics in Information Technologies during our support hours in the Library (Sunday - Thursday, 8 p.m. - midnight).
+Simon's Rock ITS Student Computer Assistants are hosting weekly thematic discussions on 
+topics in Information Technologies during our support hours in the Library (Sunday - 
+Thursday, 8 p.m. - midnight).
 </p>
 <p>
-Managing files, deploying programs… even editing images: the Linux command line offers absolute power.  Come to the SRC Alumni Library to hone your Linux-foo.  But don’t let it corrupt you (absolutely).
+Managing files, deploying programs… even editing images: the Linux command line offers 
+absolute power.  Come to the SRC Alumni Library to hone your Linux-foo.  But don’t let it 
+corrupt you (absolutely).
 </p>
 <p>
 Host: YOUR NAME HERE<br />
@@ -42,6 +46,7 @@ We need posters in two formats: i) *.gif ([pronounced both /ˈdʒɪf/ **jif** or
 
 It is acceptable to use any form of image manipulation software to create your posters, but as an exercise in working with computer languages and formatting syntaxes, please try to create a poster using [LaTeX](https://www.latex-project.org/).  **NOTE:** @jfoos has been [working hard to create a script that will auto-generate a poster]()https://github.com/src-its/LaTeX/blob/master/create_poster.py using the [Beamer document class](https://en.wikipedia.org/wiki/Beamer_(LaTeX)). All CAs are encouraged to try her script and to build on her work].
 
+---
 
 ## Related Discussions
 
