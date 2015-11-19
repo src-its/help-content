@@ -9,4 +9,4 @@ The responsibility for implementing this sequence is entirely that of the CA.
 
 1. Promoting Awareness of CA Presence at SRC.
 
-
+	*Advertise the CA program rather than individual CA library shifts
