@@ -42,7 +42,7 @@ Location: Alumni Library
 
 After scheduling a shift and drafting your blurb, it's time to create a poster.
 
-We need posters in two formats: **i)** *.gif ([pronounced both /ˈdʒɪf/ **jif** or /ˈɡɪf/ **ghif**](https://en.wikipedia.org/wiki/GIF)) formatted to 1920 x 1080 pixels, and **ii)** PDF format.
+We need posters in two formats: **i)** `*.gif` ([pronounced both /ˈdʒɪf/ **jif** or /ˈɡɪf/ **ghif**](https://en.wikipedia.org/wiki/GIF)) formatted to 1920 x 1080 pixels, and **ii)** PDF format.
 
 It is acceptable to use any form of image manipulation software to create your posters, but as an exercise in working with computer languages and formatting syntaxes, please try to create a poster using [LaTeX](https://www.latex-project.org/).  **NOTE:** @jfoos has been [working hard to create a script that will auto-generate a poster]()https://github.com/src-its/LaTeX/blob/master/create_poster.py using the [Beamer document class](https://en.wikipedia.org/wiki/Beamer_(LaTeX)). All CAs are encouraged to try her script and to build on her work].
 
