@@ -59,7 +59,7 @@ Once you have your event scheduled and elaborated, and with your
 
 ## Related Discussions
 
-1. Promoting Awareness of CA Presence at SRC.
+1. Promoting Awareness of CA Presence at SRC. Student's do not know about the availability of the CA's. The CA Table in the library reports little to no activity. Posters that display specific CA Table agendas do not attract students. Students need to be better informed of their ability to use CA's as a resource for IT Services.
 
 	* Advertise the CA program rather than individual CA library shifts
 	* put posters EVERYWHERE
