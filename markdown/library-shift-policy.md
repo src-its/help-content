@@ -57,5 +57,5 @@ Once you have your event scheduled and elaborated, and with your
 
 ---
 
-**Related Discussions:** [Promoting Awareness of CA Presence at SRC]()
+**Related Discussions:** [Promoting Awareness of CA Presence at SRC](https://github.com/src-its/help-content/blob/master/markdown/CA-table_awareness.md)
 
