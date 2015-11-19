@@ -44,10 +44,16 @@ After scheduling a shift and drafting your blurb, it's time to create a poster.
 
 We need posters in two formats:
 
-1. `.gif` ([pronounced both /ˈdʒɪf/ **jif** or /ˈɡɪf/ **ghif**](https://en.wikipedia.org/wiki/GIF)) formatted to 1920 x 1080 pixels, and
-2. `.PDF` format.
+1. `.gif` ([pronounced both /ˈdʒɪf/ **jif** or /ˈɡɪf/ **ghif**](https://en.wikipedia.org/wiki/GIF)) formatted to 1920 x 1080 pixels for publishing on our electronic bulletin boards
+2. `.PDF` format for printing
 
 It is acceptable to use any form of image manipulation software to create your posters, but as an exercise in working with computer languages and formatting syntaxes, please try to create a poster using [LaTeX](https://www.latex-project.org/).  **NOTE:** @jfoos has been [working hard to create a script that will auto-generate a poster]()https://github.com/src-its/LaTeX/blob/master/create_poster.py using the [Beamer document class](https://en.wikipedia.org/wiki/Beamer_(LaTeX)). All CAs are encouraged to try her script and to build on her work].
+
+
+### Step 4 - Submit Your Event!
+
+Once you have your event scheduled and elaborated, and with your 
+
 
 ---
 
