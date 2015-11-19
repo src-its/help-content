@@ -42,3 +42,7 @@ Location: Alumni Library
 1. Promoting Awareness of CA Presence at SRC.
 
 	* Advertise the CA program rather than individual CA library shifts
+	* put posters EVERYWHERE
+	* Get on student announces for events in emails
+	* inform professors of shifts that relate to their course and ask them to let their students know
+	* put it on the SRC website, moodle, my SRC, etc.
