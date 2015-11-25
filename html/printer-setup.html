@@ -14,7 +14,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
 
   <!-- CSS
   ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -22,10 +22,10 @@
   <link rel="stylesheet" href="css/skeleton/css/skeleton.css"> -->
   <style type="text/css">
   body{
-    color: rgb(68, 68, 68);
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 12px;
-    font-style: normal;
+    /*color: rgb(68, 68, 68);*/
+    /*font-family: Tahoma, Geneva, sans-serif;*/
+    /*font-size: 12px;*/
+    /*font-style: normal;*/
   }
   .container {
     position: relative;
@@ -182,27 +182,43 @@
 
         <h2>Quick Overview:</h2>
 
-        <p>We use the PaperCut managed system printing for students on campus. This allows quick and easy printing from any of the many release stations. The general process for connecting to PaperCut printing system on any computer is as follows:</p>
-        <p>Install and run the PaperCut Client software (see download links below), and enter your Simon’s Rock login credentials. Connect to the central printer (also called the queue); it’s conveniently named “Central” and it resides on the server “print” Make the central printer your default.</p>
-        <p>Details are provided below for Windows, Mac, and Linux setups.</p>
+        <p>We use the PaperCut managed system printing for students on campus. This allows quick and easy printing from any release station. The general process for connecting to PaperCut printing system is as follows:</p>
+        
+        <ol>
+        <li>Install and run the PaperCut Client software (<a href="#papercut-client-setup">see download links below </a>) and enter your Simon’s Rock login credentials.</li>
+        <li>Connect to the central printer; it’s conveniently named “Central” and it resides on the server “print”</li>
+        <li>Make the central printer your default.</li>
+        </ol>
+        <p>Detailed instructions are provided below for Windows, Macintosh, and Linux operating systems.</p>
 
         <h2 id="papercut-client-setup">PaperCut Client Setup:</h2>
 
-        <p>The PCClient software identifies your print jobs to the PaperCut system. To print to a campus printer, PCClient must be running so you can login to PaperCut when you submit a print job.</p>
+        <p>The PCClient software links your computer to our PaperCut system. In order to submit a print job to a campus printer, PCClient must be running and logged in.</p>
+        
         <h3 id="pcclient-for-windows-mac">PCClient for Windows &amp; Mac</h3>
-        <p>Use the links below to download the PCClient installer for your system. (Note: you must be on-campus for these links to work)</p>
+        
+        <p>Windows and Macintosh users can install PCClient by downloading and running the appropriate installer for your system. (Note: You must be on-campus for these links to work)</p>
+        
         <ul>
               <li><a href="http://safe.simons-rock.edu/software/printers/win-papercut.exe">Windows</a></li>
               <li><a href="http://safe.simons-rock.edu/software/printers/Papercut_OSX.dmg">Mac OSX 10.7-10.10</a></li>
               <li><a href="http://safe.simons-rock.edu/software/printers/Papercut_OSX_legacy.dmg">Mac OSX PRE-10.7</a></li>
         </ul>
+        
         <h3 id="pcclient-for-linux">PCClient for Linux</h3>
-        <p>In order for the Linux PCClient to work, you must first have a recent Java version installed on your computer (at least version 5). For many Linux distros, you can check this from the command line with <code>java -version</code> to verify that Java is installed. If not, research the appropriate packages for your system. [If you're running a debian-based distro, for example, install with <code>sudo apt-get install java-common</code>.</p>
-        <p>After you have confirmed that Java is installed, download the PCClient package. Extract it with the following command: <code>tar -xf pcclient-linux.tar.gz</code> After extracting the file, find and run the pc-client-linux.sh script to launch the PaperCut client. [Note: You’ll have to run this script each time you wish to use PaperCut; you may wish to configure your machine to auto-start it whenever you login to your X graphical desktop environment].</p>
+        
+        <p>For Linux users, to install the PCClient, please first ensure that you have a recent Java version installed on your computer (at least version 5). For many Linux distros, you can check this from the command line with <code>java -version</code>. If you do not have Java installed, research the appropriate packages and installation procedures for your system. [For example, debian-based distros can install Java with <code>sudo apt-get install java-common</code>.</p>
+        
+        <p>After you have confirmed that Java is installed, <a href="http://safe.simons-rock.edu/software/printers/pcclient-linux.tar.bz2" target="_blank">download the PCClient package</a> and extract it with: <code>tar -xjvf pcclient-linux.tar.bz2</code> After extracting the file, find and run the pc-client-linux.sh script to launch the PaperCut client.</p>
+        
+        <p>If you don't login to your Linux environment with the same username as your Simon's Rock account, drill down into the tree (by default it will open up in <code>usr/local/papercut/client</code>) and find the <code>config.properties</code> file. Edit this file and uncomment the <code>#user=guest</code> line, replacing "guest" with your Simon's Rock username.</p>
+        
+        <p>Please note that you’ll have to run this script each time you wish to use PaperCut unless you configure your machine to auto-start it.</p>
 
-        <h3 id="auto-login">Automatic Login</h3>
+        <h3 id="auto-login">PCClient Automatic Login</h3>
 
         <p>The Windows and Mac installers configure the PCClient software to run each time you log into your computer. After installation, PCClient will prompt you to login with your Simon's Rock user ID and password. (These are the same credentials you use for campus email and the <code>Inside</code> web pages. Note that your user ID is just the first part of your email address, not the <span class="citation" data-cites="simons-rock.edu">@simons-rock.edu</span>). If you are running it on your own computer, you may specify that it should save your credentials <code>Always</code> so that you do not need to re-enter your data each time you print.</p>
+        
         <p><strong>At shared library and lab computers, PaperCut will only allow you to save your login credentials for a couple of minutes.</strong></p>
 
         <h2 id="central-printer-installation">Central Printer Installation</h2>
