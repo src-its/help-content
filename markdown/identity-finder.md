@@ -6,6 +6,14 @@ Once Identity Finder has secured all exposed private data, a laptop thief or spy
 
 ## References
 
+```
+[^indiana-university]:https://kb.iu.edu/d/axnp "Indiana University. 'What is Identity Finder?' Knowledge Base. Last modified 2015. "
+
+[^identity-finder]:http://www.identityfinder.com/ "Identity Finder, LLC."
+
+[^pcmag]:http://www.pcmag.com/article2/0,2817,2382622,00.asp
+```
+
 [^indiana-university]:https://kb.iu.edu/d/axnp "Indiana University. 'What is Identity Finder?' Knowledge Base. Last modified 2015. "
 
 [^identity-finder]:http://www.identityfinder.com/ "Identity Finder, LLC."
